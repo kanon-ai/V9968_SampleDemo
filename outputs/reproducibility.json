@@ -1,0 +1,8 @@
+{
+  "same_after_asset_regeneration": true,
+  "sha256": {
+    "PRISM_FLIGHT-V9968-current.rom": "2a10040ce95d63bad47e5bddabd617bd4ea8b4cd043d6d5855d94f36b21d94f5",
+    "PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom": "2b17f6e13051d3aed135f6984da0fa881416069172aa59e0497fb10111b4ff19",
+    "PRISM_FLIGHT-V9968-legacy-openmsx.rom": "2bf8b7bceebee75fc6f777234fe99473bf6fdccabdc9b92ef1d280717f9fb777"
+  }
+}

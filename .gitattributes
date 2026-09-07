@@ -1,0 +1,11 @@
+* text=auto
+*.asm text eol=lf
+*.py text eol=lf
+*.tcl text eol=lf
+*.md text eol=lf
+*.cmd text eol=crlf
+*.rom binary
+*.bin binary
+*.png binary
+*.gif binary
+*.zip binary

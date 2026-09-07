@@ -1,0 +1,35 @@
+[
+  {
+    "file": "PRISM_FLIGHT-V9968-current.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 131072,
+    "runtime_bytes": 1493,
+    "profile": "current",
+    "sha256": "2a10040ce95d63bad47e5bddabd617bd4ea8b4cd043d6d5855d94f36b21d94f5",
+    "display": "SCREEN5 256x212, RGB5 palettes, LRMM, Sprite mode3",
+    "runtime_validation": "see verification.json for matching ROM hash",
+    "hardware_validation": false
+  },
+  {
+    "file": "PRISM_FLIGHT-V9968-legacy-openmsx.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 131072,
+    "runtime_bytes": 1492,
+    "profile": "legacy-openmsx",
+    "sha256": "2bf8b7bceebee75fc6f777234fe99473bf6fdccabdc9b92ef1d280717f9fb777",
+    "display": "SCREEN5 256x212, RGB5 palettes, LRMM, Sprite mode3",
+    "runtime_validation": "see verification.json for matching ROM hash",
+    "hardware_validation": false
+  },
+  {
+    "file": "PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 131072,
+    "runtime_bytes": 1492,
+    "profile": "legacy-openmsx-internal",
+    "sha256": "2b17f6e13051d3aed135f6984da0fa881416069172aa59e0497fb10111b4ff19",
+    "display": "SCREEN5 256x212, RGB5 palettes, LRMM, Sprite mode3",
+    "runtime_validation": "see verification.json for matching ROM hash",
+    "hardware_validation": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "frames": 512,
+  "frame_record_bytes": 64,
+  "background_vram": "0x20000-0x27FFF",
+  "sprite_patterns_vram": "0x28000-0x2FFFF",
+  "attributes_vram": [
+    "0x10000",
+    "0x10200"
+  ],
+  "display_pages": [
+    "0x00000",
+    "0x08000"
+  ],
+  "max_sprites_per_scanline": 6
+}

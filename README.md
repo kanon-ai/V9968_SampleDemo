@@ -1,0 +1,105 @@
+# PRISM FLIGHT — V9968 warmup demo
+
+**MSX turbo R + V9968 / 128 KiB ASCII8 ROM / Kanon × ASTRA (Codex)**
+
+青紫の光る空間が画面全体で回転・ズームし、6個の多色結晶が奥行きを変えながら周回する、小さなV9968デモです。原画・動き・PSGの短いフレーズは本デモ用に生成しました。
+
+![PRISM FLIGHT — actual V9968 openMSX capture](outputs/PRISM_FLIGHT-emulator.gif)
+
+*実際のROM実行を撮影した12秒・12fpsの無音GIF。Actual ROM execution in V9968-enabled openMSX; 12-second silent preview at 12 fps.*
+
+- [ROM・ソース一式をダウンロード](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/outputs/PRISM_FLIGHT-source-and-ROM.zip)
+- [内蔵V9968エミュレーター用ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom)
+- [English instructions](#english)
+
+これは機能確認用の試作です。実機動作・実機速度は未確認で、無保証です。性能限界を測定したベンチマークではありません。詳細は[免責事項](DISCLAIMER.md)と[利用条件](COPYRIGHT.md)を参照してください。
+
+## 最初に動かす場合
+
+1. [buppu3氏の配布ページ](https://buppu3.github.io/)からV9968対応openMSXを用意します。今回の検証対象はWindows版 `openmsx-21.0-v9968-d884c4b-x64-VC-Release.zip` です。通常のV9968未対応openMSXでは動きません。
+2. [Panasonic_FS-A1ST_V9968.xml](https://buppu3.github.io/openMSX/share/machines/Panasonic_FS-A1ST_V9968.xml)を、そのopenMSXの `share/machines/` に保存します。
+3. FS-A1STのBIOSなど、マシン定義が要求するシステムROMは利用条件に従って各自で用意してください。本リポジトリには含まれていません。
+4. マシン `Panasonic_FS-A1ST_V9968` を選び、次のROMをカートリッジとして読み込みます。
+
+**`outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom` — ASCII8、128KiB**
+
+`run-demo.cmd` を実行するか、このROMをopenMSXのカートリッジに読み込み、ASCII8を指定してください。起動とVRAM転送に約6秒かかり、その後は自動ループします。終了はopenMSXのウィンドウを閉じます。
+
+Windows用ランチャーは既定で `C:/Program Files/openMSX/openmsx.exe` を参照します。別の場所にある場合は `OPENMSX_EXE` 環境変数に実行ファイルのフルパスを指定してください。マシン定義は事前に上記の手順で導入します。起動時にデモ専用の `work/emulator/` を作成します。
+
+外付け構成を使う場合は、[HRA_V9968.xml](https://buppu3.github.io/openMSX/share/extensions/HRA_V9968.xml)を `share/extensions/` に保存し、`Panasonic_FS-A1ST` + `HRA_V9968` 拡張を選びます。ROMは下表の `legacy-openmsx.rom`、映像出力は `V9968` を選択してください。
+
+## ROMの使い分け
+
+| ファイル末尾 | 対象 | I/O | レジスター仕様 | 検証 |
+|---|---|---|---|---|
+| `legacy-openmsx-internal.rom` | `Panasonic_FS-A1ST_V9968` | 98h–9Ch | 旧R20 ECOM/EVR | 今回の実行・撮影対象 |
+| `legacy-openmsx.rom` | `Panasonic_FS-A1ST` + `HRA_V9968`拡張 | 88h–8Ch | 旧R20 ECOM/EVR | エミュレーター実行確認 |
+| `current.rom` | 現行FPGA仕様の外付けV9968 | 88h–8Ch | R21=3Ah、R20=1Fh | ビルドのみ、実機未確認 |
+
+3つともASCII8の128KiB ROMです。旧エミュレーターと現行FPGAの初期化を混同しないため分けています。この検証版エミュレーターでは、マシンXMLのVRAM値にかかわらずV9968選択時に256KiBを確保します。
+
+## サンプルと検証
+
+- `outputs/PRISM_FLIGHT-emulator.gif`：実際のROM実行を撮影した12秒のGIF。12fpsに間引いた無音プレビューです。
+- `outputs/PRISM_FLIGHT-emulator.png`：同じ実行からの静止画。
+- `outputs/verification.json`：ROM・エミュレーターのSHA-256、構成、実測更新回数、検証範囲。
+
+2つの旧仕様用ROMをそれぞれ約42秒のエミュレーター時間で実行し、ループ境界の通過、R800 DRAM動作、描画ページ切替、原画64KiBのVRAMへの完全一致、6スプライト後の終端を確認済みです。エミュレーター上では約59.91回/秒の描画更新でした。GIF撮影は等速・フレームスキップなしで実行し、12fpsで採取しています。エミュレーター上の更新速度から実機速度を保証することはできません。現行FPGA仕様のROMには、対応エミュレーターまたは実機での追加検証が必要です。
+
+## 使った機能
+
+- SCREEN5、256×212。RGB各5bitの拡張パレット。
+- LRMMによる背景全体の回転・拡大縮小。
+- Sprite mode3の多色表示・パレット群・サイズ変更。結晶は1個ずつ16×32の原画です。
+- 表示ページとスプライト属性テーブルを二重化。
+- R800側は座標テーブルの読出しとコマンド発行を担当し、画素変換をVDPへ渡します。
+
+ROMに動画の完成画面を大量格納する方式ではありません。原画32KiB、スプライト原画32KiB、512フレーム分の座標・属性32KiBを持ち、VDPが毎回画像を作ります。1周は512回の描画更新です。背景パレットも更新し、PSGの1声を鳴らします。操作やゲーム要素はありません。
+
+## 再ビルド・変更箇所
+
+Python 3、Pillow、[Pasmo](https://pasmo.speccy.org/)を使用します。検証環境はPython 3.13 / Pillow 12.2.0です。`PASMO`環境変数で実行ファイルを指定できます。未指定時はPATHまたは `C:/Software/Pasmo/pasmo.exe` を使用します。
+
+```powershell
+python -m pip install -r requirements.txt
+$env:PASMO = 'C:/path/to/pasmo.exe'
+python tools/build.py
+# Windows: the V9968 emulator, both XML files and your BIOS must be installed first.
+python tools/verify.py
+```
+
+検証には上記のユーザー所有openMSX環境が必要です。通常ビルドはエミュレーターやBIOSを要求しません。
+
+- `tools/generate.py` の `background()`：背景の形。
+- 同 `sprites()`、`palette()`：結晶・色。
+- 同 `frame_records()`：回転、ズーム、軌道、遠近の変化。
+- `src/demo.asm`：V9968初期化、LRMM発行、表示切替。
+- `src/boot.asm`：ASCII8の起動とR800への切替。
+
+`assets/*-art.png` は生成原画の確認用で、エミュレーター画面ではありません。撮影結果は `outputs/*-emulator.*` です。`work/` は実行時に作られる作業用ディレクトリーで、GitHubには含めません。ランチャー設定は `tools/preview.tcl` にあります。
+
+## 参照資料
+
+- [buppu3氏のV9968対応openMSX配布ページ](https://buppu3.github.io/)
+- [検証バイナリーに対応するopenMSX source d884c4b](https://github.com/buppu3/openMSX/tree/d884c4b29d7e736d6e488aca5f28e124a410c19f)
+- [HRA!氏のV9968 FPGA資料・実装](https://github.com/hra1129/V9968_Cartridge/tree/ceeecd7e3c2d25c20045f797617af0f70ca228c1)
+
+現行版では設計者の補足に合わせて、ポート4で拡張レジスターアクセスを許可し、R21は固定ビットを含む3Ahを指定します。Sprite mode2の新しいパレット群指定には依存していません。
+
+## English
+
+An original 128 KiB ASCII8 warmup demo for MSX turbo R + V9968: full-screen LRMM rotation/zoom, six scaled multicolor mode-3 sprites, RGB5 palette animation and a small PSG phrase. The ROM contains original indexed artwork and motion parameters; the VDP renders the transformed images at runtime. It is not a prerecorded frame sequence.
+
+1. Obtain the V9968-enabled Windows openMSX from [buppu3's page](https://buppu3.github.io/). The tested binary is `openmsx-21.0-v9968-d884c4b-x64-VC-Release.zip`.
+2. Download [Panasonic_FS-A1ST_V9968.xml](https://buppu3.github.io/openMSX/share/machines/Panasonic_FS-A1ST_V9968.xml) into its `share/machines/` directory and provide your own legally usable FS-A1ST system ROMs.
+3. Select that machine and load **`outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom`** with mapper **ASCII8**. Allow about six seconds for boot and initial VRAM upload; the demo loops automatically.
+4. On Windows, `run-demo.cmd` starts this configuration. Set `OPENMSX_EXE` if your executable is not under `C:/Program Files/openMSX/`.
+
+For the external cartridge configuration, install [HRA_V9968.xml](https://buppu3.github.io/openMSX/share/extensions/HRA_V9968.xml) into `share/extensions/`, select `Panasonic_FS-A1ST` + `HRA_V9968`, load **legacy-openmsx.rom**, and select the **V9968** video source.
+
+Both legacy profiles were tested for 42 emulated seconds, including loop wrap, page flipping and byte-exact asset upload. About 59.91 demo updates/second were observed in this emulator. The current FPGA build uses a different register map and has not been run on hardware. The GIF is a 12 fps sample of actual emulator output; it is not evidence of hardware frame rate.
+
+Build with Python 3, Pillow and Pasmo: `python -m pip install -r requirements.txt`, then `python tools/build.py`. Set `PASMO` to your assembler executable if needed. Source and ROM hashes are included in `outputs/`; `python tools/verify.py` requires the Windows emulator environment described above.
+
+This is an experimental demo, provided **AS IS, without warranty or a commitment to fixes/support**. See [DISCLAIMER.md](DISCLAIMER.md), [COPYRIGHT.md](COPYRIGHT.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). BIOS, emulator binaries and third-party machine XMLs are not bundled.

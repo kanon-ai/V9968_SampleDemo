@@ -1,0 +1,34 @@
+{
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "verified": [
+    {
+      "profile": "legacy-openmsx-internal",
+      "sha256": "2b17f6e13051d3aed135f6984da0fa881416069172aa59e0497fb10111b4ff19",
+      "machine": "Panasonic_FS-A1ST_V9968",
+      "emulated_seconds": 42,
+      "steady_demo_updates_per_second": 59.91,
+      "loop_wrap_seen": true,
+      "r800_dram": true,
+      "asset_upload_byte_exact": true,
+      "six_sprites_plus_terminator": true,
+      "hardware_tested": false,
+      "captures": 144
+    },
+    {
+      "profile": "legacy-openmsx",
+      "sha256": "2bf8b7bceebee75fc6f777234fe99473bf6fdccabdc9b92ef1d280717f9fb777",
+      "machine": "Panasonic_FS-A1ST + HRA_V9968",
+      "emulated_seconds": 42,
+      "steady_demo_updates_per_second": 59.91,
+      "loop_wrap_seen": true,
+      "r800_dram": true,
+      "asset_upload_byte_exact": true,
+      "six_sprites_plus_terminator": true,
+      "hardware_tested": false,
+      "captures": 0
+    }
+  ],
+  "preview": "144 real emulator captures, 12 seconds at 12 fps; not rendered by the asset generator",
+  "current_fpga_profile": "build only; not executed on current FPGA or matching emulator",
+  "limitations": "Emulator command timing does not establish physical V9968 performance."
+}

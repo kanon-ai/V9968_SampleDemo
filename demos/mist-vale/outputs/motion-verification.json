@@ -1,0 +1,62 @@
+{
+  "rom_sha256": "7868ffdec900ef60e8638352ffc852aa73aa3a3cea53d0c136cc09a134d45371",
+  "records_checked": 1024,
+  "all_bank_offsets_exact": true,
+  "tree_y_constant_for_every_record": true,
+  "tree_vertical_positions": [
+    48,
+    52,
+    56,
+    54,
+    50
+  ],
+  "invisible_wraps_checked": 8,
+  "maximum_sprite_planes_per_line": 8,
+  "raster_phases_checked": 32,
+  "nominal_pixels_per_second_at_60_updates": {
+    "trees": 20.625,
+    "ground": 20.625,
+    "fog_horizontal": 33.75
+  },
+  "ground_sync": {
+    "passed": true,
+    "records_checked": 1024,
+    "loop_transitions_checked": 1024,
+    "tile_period_pixels": 176,
+    "screen_columns_covered_exactly_once": 256,
+    "source_Y_range": [
+      724,
+      759
+    ],
+    "destination_Y_range": [
+      136,
+      171
+    ],
+    "height_bands_checked": 2,
+    "ground_command_descriptors_per_record": 4,
+    "transparent_copy_rows": 8,
+    "opaque_copy_rows": 28,
+    "opaque_copy_source_pixels_nonzero": 7168,
+    "repeated_padding_pixels_checked": 2880,
+    "phase_matches_all_five_trees": true,
+    "root_anchor_source_columns": [
+      136,
+      66,
+      172,
+      102,
+      32
+    ],
+    "root_contacts_checked": 5120,
+    "visible_root_contacts_checked": 3723,
+    "root_contact_and_below_ground_nonzero": true,
+    "loop_wrap_step_pixels": 1,
+    "total_progress_pixels": 352
+  },
+  "baseline_preservation": {
+    "checked": true,
+    "fixed_background_first_212_rows_exact": true,
+    "tree_art_exact": true,
+    "fog_art_exact": true,
+    "palette_exact": true
+  }
+}

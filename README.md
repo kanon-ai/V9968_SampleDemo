@@ -2,7 +2,25 @@
 
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
-## 新しいデモ：LUMEN / FORGE
+## 新しいデモ：MIST / VALE
+
+朝焼けの山を背景に、木々と手前の岸辺が一緒に水平へ流れ、少し速い半透明の霧が漂います。水面だけを走査線割り込みで揺らす、512KiB ASCII8の風景デモです。木・草・石・水際は同じスクロール位置を使い、足元が地面に対して滑らないようにしています。
+
+![MIST / VALE — actual V9968 openMSX capture](demos/mist-vale/outputs/MIST_VALE-emulator.gif)
+
+- **[詳しい説明・起動方法 / Instructions](demos/mist-vale/README.md)**
+- **[滑らかなMP4・音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-smooth.mp4)**
+- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-source-and-ROM.zip)**
+- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-V9968-legacy-openmsx-internal.rom)
+- [実装メモ / Implementation notes](demos/mist-vale/TECHNIQUES.md)
+
+SCREEN8への背景合成、Sprite mode3の半透明、R19/R27による水面ラスタを組み合わせています。独立した背景ハードウェアレイヤーを複数使う方式ではありません。両エミュレーター構成で約59.93回／秒の更新を確認し、地面との同期、表示中ページへの書込み防止、霧の混色、ソースからの再ビルド一致も検証しました。GIFは30fps、MP4は約59.92fpsの実行録画です。実機動作・実機性能は未確認です。
+
+**MIST / VALE** combines a stationary dawn landscape, trees and shoreline moving together, faster translucent fog, and raster-driven water ripples. This original 512 KiB ASCII8 sample uses SCREEN8 compositing, Sprite3 blending and line interrupts. Both emulator profiles were checked at about59.93 updates per second, including ground/tree synchronization and safe page presentation. The GIF and MP4 show actual ROM execution. Hardware operation/performance is unverified; the sample is provided without warranty or a commitment to support.
+
+---
+
+## LUMEN / FORGE
 
 固定された光の展示室で、半透明の結晶と金色の光輪が別々の方向へ回転し、拡大・縮小します。FG4付きLRMMで2つの原画を実時間変形し、Sprite mode3で拡縮と半透明を組み合わせています。512KiB ASCII8 ROMです。
 

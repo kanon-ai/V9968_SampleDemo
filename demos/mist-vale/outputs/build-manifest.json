@@ -1,0 +1,20 @@
+[
+  {
+    "file": "MIST_VALE-V9968-legacy-openmsx-internal.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 8259,
+    "sha256": "7868ffdec900ef60e8638352ffc852aa73aa3a3cea53d0c136cc09a134d45371",
+    "profile": "legacy-openmsx-internal",
+    "hardware_verified": false
+  },
+  {
+    "file": "MIST_VALE-V9968-legacy-openmsx.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 8273,
+    "sha256": "9f6c72ae14c0c7944954a66cad0e81ca07a159263b76fdf7dceb7d85e325e5d5",
+    "profile": "legacy-openmsx",
+    "hardware_verified": false
+  }
+]

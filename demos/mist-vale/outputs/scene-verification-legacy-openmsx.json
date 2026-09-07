@@ -1,0 +1,266 @@
+{
+  "passed": true,
+  "profile": "legacy-openmsx",
+  "hardware_validation": false,
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "rom_sha256": "9f6c72ae14c0c7944954a66cad0e81ca07a159263b76fdf7dceb7d85e325e5d5",
+  "FRAME_record": 277,
+  "next_frame_index": 278,
+  "source_128KiB_unchanged": true,
+  "background_pages": [
+    {
+      "page": 0,
+      "active": false,
+      "record": 276,
+      "pixels": 54272,
+      "mismatches": 0,
+      "first_mismatches": [],
+      "fixed_sky_and_water_VRAM_exact": true,
+      "SAT_duplicate_exact": true,
+      "commands": [
+        {
+          "SX": 0,
+          "SY": 768,
+          "DX": 194,
+          "DY": 48,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 48,
+          "SY": 768,
+          "DX": 124,
+          "DY": 52,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 96,
+          "SY": 768,
+          "DX": 54,
+          "DY": 56,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 160,
+          "SY": 768,
+          "DX": 0,
+          "DY": 54,
+          "NX": 32,
+          "NY": 96
+        }
+      ],
+      "ground": {
+        "commands": [
+          {
+            "SX": 94,
+            "SY": 724,
+            "DX": 0,
+            "DY": 136,
+            "NX": 162,
+            "NY": 8
+          },
+          {
+            "SX": 80,
+            "SY": 724,
+            "DX": 162,
+            "DY": 136,
+            "NX": 94,
+            "NY": 8
+          },
+          {
+            "SX": 94,
+            "SY": 732,
+            "DX": 0,
+            "DY": 144,
+            "NX": 162,
+            "NY": 28
+          },
+          {
+            "SX": 80,
+            "SY": 732,
+            "DX": 162,
+            "DY": 144,
+            "NX": 94,
+            "NY": 28
+          }
+        ],
+        "nonzero_source_writes": 8316,
+        "transparent_source_skips": 900,
+        "unoccluded_ground_pixels": 7782,
+        "screen_columns_covered_exactly_once": true,
+        "screen_pixels_covered_exactly_once": 9216,
+        "pixels_compared": 9216,
+        "pixel_mismatches": 0
+      },
+      "nonzero_source_writes": 13119,
+      "transparent_source_skips": 12993
+    },
+    {
+      "page": 1,
+      "active": true,
+      "record": 277,
+      "pixels": 54272,
+      "mismatches": 0,
+      "first_mismatches": [],
+      "fixed_sky_and_water_VRAM_exact": true,
+      "SAT_duplicate_exact": true,
+      "commands": [
+        {
+          "SX": 0,
+          "SY": 768,
+          "DX": 193,
+          "DY": 48,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 48,
+          "SY": 768,
+          "DX": 123,
+          "DY": 52,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 96,
+          "SY": 768,
+          "DX": 53,
+          "DY": 56,
+          "NX": 48,
+          "NY": 96
+        },
+        {
+          "SX": 161,
+          "SY": 768,
+          "DX": 0,
+          "DY": 54,
+          "NX": 31,
+          "NY": 96
+        }
+      ],
+      "ground": {
+        "commands": [
+          {
+            "SX": 95,
+            "SY": 724,
+            "DX": 0,
+            "DY": 136,
+            "NX": 161,
+            "NY": 8
+          },
+          {
+            "SX": 80,
+            "SY": 724,
+            "DX": 161,
+            "DY": 136,
+            "NX": 95,
+            "NY": 8
+          },
+          {
+            "SX": 95,
+            "SY": 732,
+            "DX": 0,
+            "DY": 144,
+            "NX": 161,
+            "NY": 28
+          },
+          {
+            "SX": 80,
+            "SY": 732,
+            "DX": 161,
+            "DY": 144,
+            "NX": 95,
+            "NY": 28
+          }
+        ],
+        "nonzero_source_writes": 8315,
+        "transparent_source_skips": 901,
+        "unoccluded_ground_pixels": 7789,
+        "screen_columns_covered_exactly_once": true,
+        "screen_pixels_covered_exactly_once": 9216,
+        "pixels_compared": 9216,
+        "pixel_mismatches": 0
+      },
+      "nonzero_source_writes": 13087,
+      "transparent_source_skips": 12929
+    }
+  ],
+  "reference": "SCREEN8 mapping, LMMM TIMP (zero skips) and opaque ground HMMM",
+  "raster": {
+    "actual_register_writes_observed": true,
+    "events": 468,
+    "water_writes": 429,
+    "blank_resets": 39,
+    "complete_eleven_step_frames": 39,
+    "observed_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "beam_y_range": [
+      172,
+      212
+    ],
+    "scheduled_values_exact": true,
+    "nonzero_scroll_in_top_region": 0,
+    "source": "post-write ISR breakpoints: actual R27, beam X/Y, VDP frame, R19, phase and step",
+    "event_log_sha256": "da2ffd86e0d75e6120c1ba61c9675f2a41b503905322ad4f3948dd846d8cbf42"
+  },
+  "scanout": {
+    "passed": true,
+    "command_events": 276,
+    "presentation_events": 31,
+    "visible_display_pages": [
+      0,
+      1
+    ],
+    "writes_to_visible_page": 0,
+    "wrong_display_page_presentations": 0,
+    "unfinished_command_presentations": 0,
+    "active_scan_presentations": 0,
+    "first_visible_page_writes": [],
+    "first_wrong_presentations": [],
+    "page_oracle": "d884 SDLRasterizer SCREEN8: (((R2<<10)|0x3ff)>>7)&(0x100|displayY); bit5 selects page",
+    "reference": "https://github.com/buppu3/openMSX/blob/d884c4b29d7e736d6e488aca5f28e124a410c19f/src/video/SDLRasterizer.cc",
+    "event_log_sha256": "08a23dbc911f8f680c83b13f0bbc6d78315cafda56ed9393997e82ecb1682372"
+  },
+  "ground_composite": {
+    "passed": true,
+    "pixels_compared": 18432,
+    "destination_Y_range": [
+      136,
+      171
+    ],
+    "source_Y_range": [
+      724,
+      759
+    ],
+    "composition_order": "fixed backdrop, ground TIMP/HMMM, tree TIMP, Sprite3 fog"
+  },
+  "fog": {
+    "observed_coverage_exact": true,
+    "frozen_background_comparison": true,
+    "samples": {
+      "3": {
+        "pixels": 4993,
+        "exact_rgb5_mix": 4993
+      }
+    },
+    "raw_capture_origin": [
+      33,
+      15
+    ],
+    "left_border_mask_pixels": 8,
+    "sprite_right_edge_clips_X255": true,
+    "fog_entirely_above_live_raster": true,
+    "image_comparison_Y_range": [
+      0,
+      170
+    ],
+    "raster_verified_separately": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "mode": "SCREEN8 + EPAL + Sprite3 + R19 raster",
+  "frames": 1024,
+  "record_bytes": 256,
+  "motion_rom_first_bank": 20,
+  "tree_count": 5,
+  "fog_sprite_count": 12,
+  "maximum_sprites_per_line": 12,
+  "source_background_logical": "0x20000",
+  "source_trees_logical": "0x30000",
+  "source_ground_y": 724,
+  "ground_period_pixels": 176,
+  "ground_display_band": [
+    136,
+    171
+  ],
+  "ground_command_record_offset": 180,
+  "ground_command_count": 4,
+  "ground_transparent_rows": 8,
+  "ground_opaque_rows": 28,
+  "ground_phase": "floor(frame*352/1024) modulo 176, shared with trees",
+  "fog_atlas_physical": "0x2c000-0x2ffff",
+  "tree_restore_band": [
+    48,
+    143
+  ],
+  "foreground_composite_band": [
+    48,
+    171
+  ],
+  "water_raster_lines": [
+    172,
+    211
+  ],
+  "raster_offset_pixels": [
+    0,
+    4
+  ],
+  "hardware_tested": false
+}

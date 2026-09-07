@@ -1,0 +1,20 @@
+[
+  {
+    "file": "LUMEN_FORGE-V9968-legacy-openmsx-internal.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 7845,
+    "sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff",
+    "profile": "legacy-openmsx-internal",
+    "hardware_verified": false
+  },
+  {
+    "file": "LUMEN_FORGE-V9968-legacy-openmsx.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 7845,
+    "sha256": "da04c55ac02d472208abb622426408765a54554bcf5b799843439133d32a4fc3",
+    "profile": "legacy-openmsx",
+    "hardware_verified": false
+  }
+]

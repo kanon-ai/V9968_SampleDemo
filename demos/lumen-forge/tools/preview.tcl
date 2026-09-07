@@ -1,0 +1,10 @@
+set save_settings_on_exit false
+set throttle true
+set speed 100
+set renderer SDLGL-PP
+set minframeskip 0
+set maxframeskip 0
+set scale_factor 3
+set scanline 0
+set blur 0
+set deinterlace true

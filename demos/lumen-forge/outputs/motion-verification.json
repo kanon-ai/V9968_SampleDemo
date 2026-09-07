@@ -1,0 +1,12 @@
+{
+  "motion_records": 1024,
+  "record_bytes": 256,
+  "all_ascii8_offsets_checked": true,
+  "max_sprite_planes_per_line": 14,
+  "main_destination_size_pixels": [
+    117,
+    161
+  ],
+  "loop_boundary_no_larger_jump": true,
+  "rom_sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff"
+}

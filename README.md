@@ -1,4 +1,26 @@
-# PRISM FLIGHT — V9968 warmup demo
+# V9968 Sample Demos
+
+MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
+
+## 新しいデモ：LUMEN / FORGE
+
+固定された光の展示室で、半透明の結晶と金色の光輪が別々の方向へ回転し、拡大・縮小します。FG4付きLRMMで2つの原画を実時間変形し、Sprite mode3で拡縮と半透明を組み合わせています。512KiB ASCII8 ROMです。
+
+![LUMEN / FORGE — actual V9968 openMSX capture](demos/lumen-forge/outputs/LUMEN_FORGE-emulator.gif)
+
+- **[詳しい説明・起動方法 / Instructions](demos/lumen-forge/README.md)**
+- **[滑らかなMP4・音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-smooth.mp4)**
+- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-source-and-ROM.zip)**
+- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-V9968-legacy-openmsx-internal.rom)
+- [実装メモ / Implementation notes](demos/lumen-forge/TECHNIQUES.md)
+
+GIFは実行録画から作成した30fpsのプレビューです。MP4は約59.92fpsの記録を保持し、フレーム補間や速度変更はありません。両エミュレーター構成で約59.93回／秒の更新を確認しました。実機の測定値ではありません。
+
+**LUMEN / FORGE** combines two live FG4 LRMM rotations, independent Sprite3 scaling and transparency over a stationary SCREEN8 scene. It is a 512 KiB ASCII8 technical sample for creators. The 30 fps GIF comes from actual ROM execution; the linked MP4 retains native emulator cadence and PSG audio. Hardware operation/performance remains unverified. See the linked Japanese/English instructions and terms.
+
+---
+
+## PRISM FLIGHT — V9968 warmup demo
 
 **MSX turbo R + V9968 / 128 KiB ASCII8 ROM / Kanon × ASTRA (Codex)**
 

@@ -1,0 +1,11 @@
+{
+  "source": "openMSX internal recorder, actual ROM execution",
+  "mp4_fps": 59.92,
+  "mp4_frames": 719,
+  "mp4_audio": "PSG recording, AAC",
+  "mp4_frame_interpolation": false,
+  "gif_frames": 360,
+  "gif_duration_ms": 12000,
+  "gif_target_fps": 30,
+  "rom_sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff"
+}

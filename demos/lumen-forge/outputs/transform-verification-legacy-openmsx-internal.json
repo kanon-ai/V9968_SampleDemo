@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "profile": "legacy-openmsx-internal",
+  "hardware_validation": false,
+  "requested_freeze_seconds": 10,
+  "settle_seconds": 0.15,
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "rom_sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff",
+  "reference": {
+    "commit": "d884c4b29d7e736d6e488aca5f28e124a410c19f",
+    "source": "https://github.com/buppu3/openMSX/blob/d884c4b29d7e736d6e488aca5f28e124a410c19f/src/video/VDPCmdEngine.cc",
+    "functions": [
+      "startLrmmHs",
+      "executeLrmmHs",
+      "Graphic4Mode::addressOf",
+      "Graphic4Mode::point"
+    ],
+    "rounding": "signed division truncates toward zero; inclusive source window; COL=0; IMP"
+  },
+  "frame_identification": {
+    "FRAME_exact_record": 245,
+    "next_frame_index": 246,
+    "active_atlas": "0x3c000",
+    "method": "FRAME and SAT equality with motion records, independent of transformed pixels"
+  },
+  "source_atlas_unchanged": true,
+  "atlases": [
+    {
+      "physical_base": "0x38000",
+      "active": false,
+      "SAT_record": 244,
+      "records_with_identical_SAT": [
+        243,
+        244
+      ],
+      "SAT_duplicate_plane_exact": true,
+      "transforms": {
+        "primary": {
+          "size": [
+            128,
+            128
+          ],
+          "SX_SY_VX_VY": [
+            137,
+            1398,
+            -253,
+            38
+          ],
+          "pixels": 16384,
+          "exact_pixels": 16384,
+          "mismatches": 0,
+          "packed_bytes_exact": true,
+          "outside_source_window_pixels": 998,
+          "outside_pixels_all_zero": true,
+          "pixels_different_from_unrotated_template": 7192,
+          "first_mismatches": []
+        },
+        "secondary": {
+          "size": [
+            64,
+            64
+          ],
+          "SX_SY_VX_VY": [
+            198,
+            1288,
+            -56,
+            250
+          ],
+          "pixels": 4096,
+          "exact_pixels": 4096,
+          "mismatches": 0,
+          "packed_bytes_exact": true,
+          "outside_source_window_pixels": 365,
+          "outside_pixels_all_zero": true,
+          "pixels_different_from_unrotated_template": 522,
+          "first_mismatches": []
+        }
+      },
+      "static_area": {
+        "pixels": 12288,
+        "mismatches": 0,
+        "includes_both_particle_patterns": true
+      }
+    },
+    {
+      "physical_base": "0x3c000",
+      "active": true,
+      "SAT_record": 245,
+      "records_with_identical_SAT": [
+        245
+      ],
+      "SAT_duplicate_plane_exact": true,
+      "transforms": {
+        "primary": {
+          "size": [
+            128,
+            128
+          ],
+          "SX_SY_VX_VY": [
+            136,
+            1399,
+            -254,
+            34
+          ],
+          "pixels": 16384,
+          "exact_pixels": 16384,
+          "mismatches": 0,
+          "packed_bytes_exact": true,
+          "outside_source_window_pixels": 917,
+          "outside_pixels_all_zero": true,
+          "pixels_different_from_unrotated_template": 7183,
+          "first_mismatches": []
+        },
+        "secondary": {
+          "size": [
+            64,
+            64
+          ],
+          "SX_SY_VX_VY": [
+            198,
+            1287,
+            -51,
+            251
+          ],
+          "pixels": 4096,
+          "exact_pixels": 4096,
+          "mismatches": 0,
+          "packed_bytes_exact": true,
+          "outside_source_window_pixels": 343,
+          "outside_pixels_all_zero": true,
+          "pixels_different_from_unrotated_template": 671,
+          "first_mismatches": []
+        }
+      },
+      "static_area": {
+        "pixels": 12288,
+        "mismatches": 0,
+        "includes_both_particle_patterns": true
+      }
+    }
+  ],
+  "background_pages": [
+    {
+      "page": 0,
+      "pixels": 54272,
+      "mismatches": 0,
+      "actual_sha256": "b41122bf16f81af7ba221791d2d7c84689cb38c12c26f30468d12349adbb1ed4",
+      "source_sha256": "b41122bf16f81af7ba221791d2d7c84689cb38c12c26f30468d12349adbb1ed4"
+    },
+    {
+      "page": 1,
+      "pixels": 54272,
+      "mismatches": 0,
+      "actual_sha256": "b41122bf16f81af7ba221791d2d7c84689cb38c12c26f30468d12349adbb1ed4",
+      "source_sha256": "b41122bf16f81af7ba221791d2d7c84689cb38c12c26f30468d12349adbb1ed4"
+    }
+  ],
+  "snapshot_sha256": {
+    "vram.bin": "c5d25c68c8d941fba5dcb2a859b9bfaf317b2f2d2acb5ac70613194d26d957a3",
+    "registers.bin": "f0a7b1fd1fb71fdf5923cb3bb950688a4a8547d09508fbd46e4457bd32345727",
+    "frame.bin": "dc04d9dad9ddf892ad0cfc470a95c21bf06988e2c26b58b4a8db7a038b12769b",
+    "frame-index.bin": "ca36967bdbb71e0d87797c0b0fe9a753bd777e0cb4ab142f7c7cddda7eae6cb4"
+  },
+  "errors": []
+}

@@ -1,0 +1,4 @@
+/work/
+__pycache__/
+*.pyc
+/outputs/emulator-first.png

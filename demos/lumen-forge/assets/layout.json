@@ -1,0 +1,28 @@
+{
+  "mode": "SCREEN8 + EPAL + Sprite3 + FG4 LRMM",
+  "frames": 1024,
+  "record_bytes": 256,
+  "maximum_sprites_per_line": 14,
+  "background_physical": [
+    "0x20000-0x27fff",
+    "0x30000-0x37fff"
+  ],
+  "source_atlas_physical": "0x28000-0x2bfff",
+  "rotated_atlas_physical": [
+    "0x38000-0x3bfff",
+    "0x3c000-0x3ffff"
+  ],
+  "SAT_physical": [
+    "0x07000",
+    "0x07200"
+  ],
+  "SAT_cpu_logical": [
+    "0x0e000",
+    "0x0e400"
+  ],
+  "SAT_upload": "each attribute byte written twice; d884 mode3 physical reader workaround",
+  "rotation": "two live FG4 LRMM transforms, 128x128 and64x64; no stored rotation frames",
+  "scaling": "Sprite3 destination width and height",
+  "background": "stationary",
+  "hardware_validation": false
+}

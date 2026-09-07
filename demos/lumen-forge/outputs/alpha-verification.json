@@ -1,0 +1,23 @@
+{
+  "frozen_background_comparison": true,
+  "opaque_reference_capture": true,
+  "observed_coverage_matches": true,
+  "rom_sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff",
+  "samples": {
+    "1": {
+      "pixels": 2841,
+      "matching_rgb5_mix_exact": 2841,
+      "fraction": 1.0
+    },
+    "2": {
+      "pixels": 5334,
+      "matching_rgb5_mix_exact": 5334,
+      "fraction": 1.0
+    },
+    "3": {
+      "pixels": 96,
+      "matching_rgb5_mix_exact": 96,
+      "fraction": 1.0
+    }
+  }
+}

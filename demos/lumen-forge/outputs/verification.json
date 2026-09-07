@@ -1,0 +1,44 @@
+{
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "verified": [
+    {
+      "profile": "legacy-openmsx-internal",
+      "sha256": "90dcd30fa83896981b165e7f1723ddc7a6d758db58bf3b0208c1912ab5d904ff",
+      "machine": "Panasonic_FS-A1ST_V9968",
+      "emulated_seconds": 50,
+      "steady_demo_updates_per_second": 59.93,
+      "loop_wrap_seen": true,
+      "r800_dram": true,
+      "asset_upload_byte_exact": true,
+      "fourteen_sprites_plus_terminator": true,
+      "transparency_values": [
+        25,
+        50,
+        75
+      ],
+      "hardware_tested": false,
+      "native_recording_seconds": 12
+    },
+    {
+      "profile": "legacy-openmsx",
+      "sha256": "da04c55ac02d472208abb622426408765a54554bcf5b799843439133d32a4fc3",
+      "machine": "Panasonic_FS-A1ST + HRA_V9968",
+      "emulated_seconds": 50,
+      "steady_demo_updates_per_second": 59.93,
+      "loop_wrap_seen": true,
+      "r800_dram": true,
+      "asset_upload_byte_exact": true,
+      "fourteen_sprites_plus_terminator": true,
+      "transparency_values": [
+        25,
+        50,
+        75
+      ],
+      "hardware_tested": false,
+      "native_recording_seconds": 0
+    }
+  ],
+  "preview": "12-second openMSX native AVI recording; preserve source frame rate for MP4, 30 fps GIF preview",
+  "current_fpga_profile": "not included; SCREEN8 mode3 SAT handling needs matching hardware verification",
+  "limitations": "Emulator command timing does not establish physical V9968 performance."
+}

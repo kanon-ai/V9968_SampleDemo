@@ -2,7 +2,31 @@
 
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
-## 新しいデモ：MIST / VALE
+## 新しいデモ：CATSTRIDER
+
+斜め後ろ姿の猫が、高速に流れる宇宙の床を滑走し、写真調の猫缶と銀桃色の鯛に出会います。112走査線のLRMM遠近描画、Sprite mode3の拡縮・半透明、光のリングと星の光跡を組み合わせた、**512 KiB ASCII8・約51.3秒の自動再生デモ**です。操作を伴うゲームではありません。
+
+ネコ素材はAI生成です。
+
+魚と猫缶の素材もAI生成です。
+
+![CATSTRIDER — actual V9968 openMSX capture](demos/catstrider/outputs/CATSTRIDER-emulator.gif)
+
+- **[詳しい説明・起動方法 / Instructions](demos/catstrider/README.md)**
+- **[全編MP4・PSG音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-smooth.mp4)**
+- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-V9968-source.zip)**
+- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-V9968-legacy-openmsx-internal.rom)
+- [実装メモ / Implementation notes](demos/catstrider/TECHNIQUES.md)
+
+内蔵・外付けの両openMSX構成で、54秒の実行と一周後の再開を検証しました。シーン更新は29.9614回／秒、MP4は59.92 fpsの実行録画を補間せず保持しています。GIFは30 fps、5秒地点から15秒の抜粋です。対象はV9968対応openMSX d884c4bで、実機・現行FPGAでの動作や性能は未確認です。
+
+**CATSTRIDER** combines a photographic-looking rear-facing cat, generic cat-food tins and silver-and-pink sea bream with a fast perspective floor, scaled and translucent Sprite3 artwork, portals and star streaks. This original 512 KiB ASCII8 sample plays automatically for about 51.3 seconds per loop; it is noninteractive. Both tested openMSX configurations measured 29.9614 scene updates per second. The MP4 retains native 59.92 fps recording and PSG sound without interpolation. Physical hardware and the current FPGA configuration remain unverified.
+
+The cat asset is AI-generated. The fish and cat-food tin assets are also AI-generated.
+
+---
+
+## MIST / VALE
 
 朝焼けの山を背景に、木々と手前の岸辺が一緒に水平へ流れ、少し速い半透明の霧が漂います。水面だけを走査線割り込みで揺らす、512KiB ASCII8の風景デモです。木・草・石・水際は同じスクロール位置を使い、足元が地面に対して滑らないようにしています。
 

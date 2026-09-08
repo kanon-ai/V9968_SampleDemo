@@ -1,0 +1,39 @@
+{
+  "profile": "legacy-openmsx",
+  "rom_sha256": "5a92a06638aa21aa674bbcd8bf56379d25ec065de9e3ba4ef75ff0e2bbcd5d69",
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "passed": true,
+  "hardware_tested": false,
+  "stage_seconds": 54.0,
+  "presentations": 1618,
+  "updates_per_second": 29.9614,
+  "presentation_vdp_frame_deltas": [
+    2
+  ],
+  "every_presentation_two_vblanks": true,
+  "frame_indices_consecutive": true,
+  "loop_wrap_seen": true,
+  "command_events": 181328,
+  "complete_updates_with_112_strips": 1618,
+  "every_complete_update_112_strips": true,
+  "lrmm_command_geometry_exact": true,
+  "loaded_floor_geometry_byte_exact": true,
+  "loaded_floor_geometry_sha256": "aec602e30c8b7da54a88662587eba0d2924d8c8d2c60e64612533a50a7526609",
+  "left_edge_mask_enabled": true,
+  "writes_to_visible_page": 0,
+  "unsafe_presentations": 0,
+  "source_upload_byte_exact": true,
+  "both_sat_terminators_exact": true,
+  "r800_dram_and_r20_7f": true,
+  "cpu_registers_hex": "010200880ca40001f4a004f3550c4010401001048253f2fee8910200",
+  "vdp_registers_hex": "0e603f0000cb50000880000100000302002f00007f00050000020000000000001100af020400d400fc0000000000001f00000000008002ff01ff02ffffffffff",
+  "screenshots": [
+    "final.png",
+    "stage-008.00.png",
+    "stage-038.00.png",
+    "stage-050.00.png"
+  ],
+  "presentation_log_sha256": "ea329de7a2d5f5b120e95c57b6944faf116fc0b67671d5cc147957649a907458",
+  "command_log_sha256": "4c175ad98fe6cde6c55f8e2bb10fc11bb4d7eeb6cda21152fa207a704f02778d",
+  "limitations": "Pinned openMSX observations; not evidence of physical V9968 timing."
+}

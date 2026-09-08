@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "validation": "Static built-byte/address audit; no emulator or hardware execution",
+  "hardware_tested": false,
+  "frames_checked": 1536,
+  "rom_sha256": {
+    "legacy-openmsx-internal": "9910d312e6cd9a75333a4b8eea14bebe1f9b64a7375a212da78c764846d10613",
+    "legacy-openmsx": "5a92a06638aa21aa674bbcd8bf56379d25ec065de9e3ba4ef75ff0e2bbcd5d69"
+  },
+  "source_sha256": {
+    "cat-key.png": "1bb6746da974286efb5fce92d5cbcfc41655921d867ec020a204369165ff1d4d",
+    "cat-flight-key.png": "96385dd7c4758cbf7b473adef85321c23f419f095c3195021a7e5ac0df8d576e",
+    "cat-front-sunglasses-key.png": "a47971653b3184b099b93e92be93d893916ecb72d1cf7d37420a976cf660f961",
+    "fish-photo-key.png": "ee78befeb3504c62fe78f700afa4ab39d1777c5743ff8f1bbbb58d6795f8a6bc",
+    "can-photo-key.png": "7b2f8540ea988fd6f49919fe0e6f1b326d00a83db730374bcd5294f6bc70a48f"
+  },
+  "asset_sha256": {
+    "background-indexed.bin": "0703b8df2f0efb828d319c00e276281e3185324725c49a06cad35d086063ee61",
+    "floor-geometry.inc": "07dd5bde2c8c086ab9a4daad8489497bbc26d412b5bb4a2975e6e41fff2534e1",
+    "generation-report.json": "240ba7d0c106372189751fcc2c4744ec6d62363d90e24de80f6579825b42d1b3",
+    "motion.bin": "527b53e068f993378b22cca88aa403da25c5ae72733cd0c5acba44f54db32f8c",
+    "palette-rgb5.bin": "8acde8952cd0c59c6054c9211987265ee90f460980269d9dd1e207b6604ea862",
+    "palettes.inc": "b7fd088787f19ebe12c49156d2a356f079966fee6096ec685d983dfc389c2787",
+    "sky-art.png": "db07b8a6acc2a4491dcc999d80f6bc62f1269e23c96b84fade5729a9b1cf849a",
+    "sprite-atlas-art.png": "949afa93f8f26ac269e08371c90aeabef107764d64bc36e13fb8dc07f7bd181a",
+    "sprite-atlas.bin": "e1e9169e814af8003ee42f13ec2c48d0e13043efe6aae8af1abcaa2dca58f750",
+    "vram-upload.bin": "f0c40969f8176de275816cd469f142235e976196941401e8cf0b8782228ae6bc"
+  },
+  "source_code_sha256": {
+    "src/demo.asm": "0642ed44649adc20962ef08f4f925861bec5748c1544eb35af0016295858389d",
+    "src/boot.asm": "38d0c9a9d683986ca2c3af6ced636c3ec6f2f8129cd5ff4acf664baf274162d3",
+    "tools/generate.py": "585c51bcc944473ce24db716c52e61800e6f778090bd41f09c2349fc149cfe67",
+    "tools/stage.py": "a7d8be2c6c549b4255529773d27ce9838a7f64a14d59126fd63ece8c5a868d29",
+    "tools/props.py": "c30b8f277238a60eb279c54cef9d7c2f06c97af24a6e325275255b688f9ebc61",
+    "tools/photo_props.py": "f74c4a8277f01a69b1b41a225ecd4d15b900cdd86bdaa58ce3893e52d298848a",
+    "tools/effects.py": "a88ed615f0df7fb63212df8b786450ded690fc0a882447defb06890ded3e941a"
+  },
+  "bank_mapping_records_checked": 3072,
+  "source_window_x": [
+    0,
+    511
+  ],
+  "source_window_y": [
+    640,
+    767
+  ],
+  "floor_scanlines_per_update": 112,
+  "floor_scanlines_checked": 172032,
+  "floor_geometry_record_bytes": 5,
+  "floor_maximum_center_error_pixels": 0.49411764705882355,
+  "floor_dx_range": [
+    0,
+    4
+  ],
+  "floor_right_edge_always_256": true,
+  "floor_physical_address_range": [
+    147456,
+    221183
+  ],
+  "sprite_attributes_checked": 24576,
+  "sprite_source_address_range": [
+    163840,
+    188383
+  ],
+  "maximum_visible_sprites": 16,
+  "maximum_sprites_per_scanline": 11,
+  "no_early_y216": true,
+  "layout_nonoverlapping": true,
+  "all_palette_components_rgb5": true,
+  "scene_frame_counts": [
+    120,
+    780,
+    420,
+    216
+  ],
+  "phase_sequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "boss_maximum_height": 166,
+  "first_finale_card_frame": 1440,
+  "artwork_plane_usage": {
+    "cat": 0,
+    "cat_flight": 4608,
+    "fish": 2944,
+    "can": 1505,
+    "boss": 1652,
+    "rainbow": 2999,
+    "laser": 0,
+    "shadow": 0,
+    "flare": 109,
+    "ending": 768,
+    "ring": 400,
+    "streak_left": 3598,
+    "streak_right": 3171
+  },
+  "hero_rear_only": true,
+  "departure_shrinks_and_rises": true,
+  "forward_motion": {
+    "frames": [
+      240,
+      1200
+    ],
+    "stored_scanlines_checked": 112,
+    "minimum_source_units_per_frame": 1.8499999999994543,
+    "minimum_stored_average_units_per_frame": 2.0458333333333334,
+    "maximum_stored_average_units_per_frame": 2.046875,
+    "quantized_forward_steps": [
+      1,
+      2,
+      3
+    ]
+  },
+  "projectiles": {
+    "stored_emissions_checked": 74,
+    "records_per_emission": 18,
+    "fixed_aim_screen_position": [
+      128,
+      91
+    ],
+    "all_shrink_and_approach_aim": true,
+    "method": "Match stored opaque streak SAT entries across emission lifetimes; compare endpoint area and distance"
+  },
+  "floor_palette_variants": 17,
+  "cat_palette_animation_preserves_original": true,
+  "psg_metadata": {
+    "voice_volume_values": [
+      [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        3,
+        5,
+        7
+      ]
+    ],
+    "noise_period_values": [
+      1,
+      16,
+      23
+    ],
+    "mixer_low_six_values": [
+      28,
+      56
+    ],
+    "reserved_253_255_zero": true
+  },
+  "hero_metadata_matches_three_attrs": true,
+  "future_hero_hook_validation": "Source labels and recorded SAT/state consistency only; no live-input experiment",
+  "loop_validation": "All1536 ordered records checked; runtime wrap is verified separately by run_check.py"
+}

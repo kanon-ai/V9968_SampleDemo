@@ -1,0 +1,136 @@
+{
+  "frames": 1536,
+  "target_scene_fps": 30,
+  "stage_seconds_nominal": 51.2,
+  "motion_bytes": 393216,
+  "upload_bytes": 98304,
+  "maximum_sprites": 16,
+  "lrmm_commands_per_update": 112,
+  "lrmm_strip_height": 1,
+  "phases": [
+    {
+      "id": 0,
+      "name": "Unexpected levitation",
+      "start": 0,
+      "end": 120
+    },
+    {
+      "id": 1,
+      "name": "The orbital pantry",
+      "start": 120,
+      "end": 900
+    },
+    {
+      "id": 2,
+      "name": "His Extremely Fishy Majesty",
+      "start": 900,
+      "end": 1320
+    },
+    {
+      "id": 3,
+      "name": "Enlightenment, apparently",
+      "start": 1320,
+      "end": 1536
+    }
+  ],
+  "layout": {
+    "cat": [
+      0,
+      0,
+      48,
+      64,
+      12
+    ],
+    "cat_flight": [
+      0,
+      64,
+      48,
+      64,
+      12
+    ],
+    "fish": [
+      48,
+      0,
+      32,
+      64,
+      13
+    ],
+    "can": [
+      80,
+      0,
+      32,
+      64,
+      14
+    ],
+    "boss": [
+      112,
+      0,
+      64,
+      128,
+      13
+    ],
+    "rainbow": [
+      176,
+      0,
+      16,
+      64,
+      15
+    ],
+    "laser": [
+      192,
+      0,
+      16,
+      128,
+      15
+    ],
+    "shadow": [
+      208,
+      0,
+      16,
+      16,
+      15
+    ],
+    "flare": [
+      224,
+      0,
+      16,
+      32,
+      15
+    ],
+    "ending": [
+      0,
+      128,
+      128,
+      32,
+      15
+    ],
+    "ring": [
+      128,
+      128,
+      64,
+      64,
+      15
+    ],
+    "streak_left": [
+      208,
+      32,
+      16,
+      64,
+      15
+    ],
+    "streak_right": [
+      224,
+      32,
+      16,
+      64,
+      15
+    ]
+  },
+  "cat_source_sha256": "1bb6746da974286efb5fce92d5cbcfc41655921d867ec020a204369165ff1d4d",
+  "cat_flight_source_sha256": "96385dd7c4758cbf7b473adef85321c23f419f095c3195021a7e5ac0df8d576e",
+  "cat_front_source_sha256": "a47971653b3184b099b93e92be93d893916ecb72d1cf7d37420a976cf660f961",
+  "fish_source_sha256": "ee78befeb3504c62fe78f700afa4ab39d1777c5743ff8f1bbbb58d6795f8a6bc",
+  "can_source_sha256": "7b2f8540ea988fd6f49919fe0e6f1b326d00a83db730374bcd5294f6bc70a48f",
+  "all_sat_early_terminators_avoided": true,
+  "all_lrmm_source_coordinates_in_window": true
+}

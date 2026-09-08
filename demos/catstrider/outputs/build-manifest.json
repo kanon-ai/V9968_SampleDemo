@@ -1,0 +1,38 @@
+[
+  {
+    "file": "CATSTRIDER-V9968-legacy-openmsx-internal.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 14814,
+    "sha256": "9910d312e6cd9a75333a4b8eea14bebe1f9b64a7375a212da78c764846d10613",
+    "profile": "legacy-openmsx-internal",
+    "upload_banks": [
+      4,
+      15
+    ],
+    "motion_banks": [
+      16,
+      63
+    ],
+    "motion_records": 1536,
+    "hardware_verified": false
+  },
+  {
+    "file": "CATSTRIDER-V9968-legacy-openmsx.rom",
+    "mapper": "ASCII8",
+    "rom_bytes": 524288,
+    "runtime_bytes": 14828,
+    "sha256": "5a92a06638aa21aa674bbcd8bf56379d25ec065de9e3ba4ef75ff0e2bbcd5d69",
+    "profile": "legacy-openmsx",
+    "upload_banks": [
+      4,
+      15
+    ],
+    "motion_banks": [
+      16,
+      63
+    ],
+    "motion_records": 1536,
+    "hardware_verified": false
+  }
+]

@@ -1,0 +1,555 @@
+{
+  "passed": true,
+  "scope": "Static combined audit: photographic fish/can/boss, palettes13/14 and the unused front-cat sunglasses slot; no emulator execution",
+  "baseline": "work/pre-photo-enemies",
+  "hardware_tested": false,
+  "original_source_sha256": {
+    "cat-key.png": "1bb6746da974286efb5fce92d5cbcfc41655921d867ec020a204369165ff1d4d",
+    "cat-flight-key.png": "96385dd7c4758cbf7b473adef85321c23f419f095c3195021a7e5ac0df8d576e",
+    "cat-front-sunglasses-key.png": "a47971653b3184b099b93e92be93d893916ecb72d1cf7d37420a976cf660f961",
+    "fish-photo-key.png": "ee78befeb3504c62fe78f700afa4ab39d1777c5743ff8f1bbbb58d6795f8a6bc",
+    "can-photo-key.png": "7b2f8540ea988fd6f49919fe0e6f1b326d00a83db730374bcd5294f6bc70a48f"
+  },
+  "conversion_source_sha256": {
+    "tools/photo_props.py": "f74c4a8277f01a69b1b41a225ecd4d15b900cdd86bdaa58ce3893e52d298848a",
+    "tools/generate.py": "585c51bcc944473ce24db716c52e61800e6f778090bd41f09c2349fc149cfe67"
+  },
+  "roms": {
+    "legacy-openmsx-internal": {
+      "baseline_sha256": "af68554f2adbdd358e2fd57c95862e422cd74efff17389955bb90b21b00a40da",
+      "current_sha256": "9910d312e6cd9a75333a4b8eea14bebe1f9b64a7375a212da78c764846d10613",
+      "bytes": 524288,
+      "changed_bytes": 7107,
+      "changed_bytes_outside_authorized_regions_or_palettes": 0,
+      "runtime_bytes": 14814,
+      "embedded_palette_rom_offsets": {
+        "initial_palette": 9198,
+        "pulse_palettes": 9966
+      },
+      "bootstrap_and_program_code_byte_identical": true,
+      "all_motion_banks_byte_identical": true
+    },
+    "legacy-openmsx": {
+      "baseline_sha256": "66c247d6fe18ec6030f341f484710c340bec53f79d889d251941b5a4f7c97a71",
+      "current_sha256": "5a92a06638aa21aa674bbcd8bf56379d25ec065de9e3ba4ef75ff0e2bbcd5d69",
+      "bytes": 524288,
+      "changed_bytes": 7107,
+      "changed_bytes_outside_authorized_regions_or_palettes": 0,
+      "runtime_bytes": 14828,
+      "embedded_palette_rom_offsets": {
+        "initial_palette": 9212,
+        "pulse_palettes": 9980
+      },
+      "bootstrap_and_program_code_byte_identical": true,
+      "all_motion_banks_byte_identical": true
+    }
+  },
+  "motion_and_background_unchanged": {
+    "motion.bin": "527b53e068f993378b22cca88aa403da25c5ae72733cd0c5acba44f54db32f8c",
+    "background-indexed.bin": "0703b8df2f0efb828d319c00e276281e3185324725c49a06cad35d086063ee61",
+    "floor-geometry.inc": "07dd5bde2c8c086ab9a4daad8489497bbc26d412b5bb4a2975e6e41fff2534e1"
+  },
+  "sky_preview": {
+    "indexed_pixels_byte_identical": true,
+    "decoded_rgb_pixels_byte_identical": true,
+    "baseline_sha256": "eaaf75e016234b7cf093c5fcc2341c864dce9cabe204172532e0bc526fe63b62",
+    "current_sha256": "db07b8a6acc2a4491dcc999d80f6bc62f1269e23c96b84fade5729a9b1cf849a",
+    "note": "PNG stores the full256-colour palette. Only its unused fish/can palette entries differ; indexed and displayed sky pixels are identical."
+  },
+  "atlas_layout_unchanged": true,
+  "atlas_changed_pixels": 7662,
+  "atlas_regions": {
+    "cat": {
+      "rect": [
+        0,
+        0,
+        48,
+        64
+      ],
+      "palette_group": 12,
+      "changed_pixels": 290,
+      "unchanged": false
+    },
+    "cat_flight": {
+      "rect": [
+        0,
+        64,
+        48,
+        64
+      ],
+      "palette_group": 12,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "fish": {
+      "rect": [
+        48,
+        0,
+        32,
+        64
+      ],
+      "palette_group": 13,
+      "changed_pixels": 1175,
+      "unchanged": false
+    },
+    "can": {
+      "rect": [
+        80,
+        0,
+        32,
+        64
+      ],
+      "palette_group": 14,
+      "changed_pixels": 1317,
+      "unchanged": false
+    },
+    "boss": {
+      "rect": [
+        112,
+        0,
+        64,
+        128
+      ],
+      "palette_group": 13,
+      "changed_pixels": 4880,
+      "unchanged": false
+    },
+    "rainbow": {
+      "rect": [
+        176,
+        0,
+        16,
+        64
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "laser": {
+      "rect": [
+        192,
+        0,
+        16,
+        128
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "shadow": {
+      "rect": [
+        208,
+        0,
+        16,
+        16
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "flare": {
+      "rect": [
+        224,
+        0,
+        16,
+        32
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "ending": {
+      "rect": [
+        0,
+        128,
+        128,
+        32
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "ring": {
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "streak_left": {
+      "rect": [
+        208,
+        32,
+        16,
+        64
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    },
+    "streak_right": {
+      "rect": [
+        224,
+        32,
+        16,
+        64
+      ],
+      "palette_group": 15,
+      "changed_pixels": 0,
+      "unchanged": true
+    }
+  },
+  "atlas_changes_outside_authorized_four_regions": 0,
+  "flight_cat_and_all_effect_regions_byte_identical": true,
+  "palette_changed_global_indices": [
+    208,
+    239
+  ],
+  "initial_palette_changed_components": 88,
+  "pulse_palette_changed_components": 2807,
+  "sky_floor_cat_effect_palette_groups_unchanged": true,
+  "floor_palette_animation_and_psg_chords_byte_identical": true,
+  "vram_upload_changed_bytes": 4212,
+  "vram_changes_outside_authorized_four_atlas_regions": 0,
+  "photo_conversion": {
+    "fish": {
+      "canvas": [
+        32,
+        64
+      ],
+      "opaque_bbox": [
+        1,
+        1,
+        29,
+        63
+      ],
+      "binary_alpha": true,
+      "opaque_palette_entries_used": 15,
+      "palette_rgb8": [
+        [
+          74,
+          33,
+          25
+        ],
+        [
+          255,
+          255,
+          247
+        ],
+        [
+          214,
+          214,
+          214
+        ],
+        [
+          239,
+          239,
+          239
+        ],
+        [
+          222,
+          222,
+          222
+        ],
+        [
+          214,
+          197,
+          197
+        ],
+        [
+          214,
+          181,
+          173
+        ],
+        [
+          214,
+          165,
+          156
+        ],
+        [
+          189,
+          173,
+          173
+        ],
+        [
+          206,
+          148,
+          140
+        ],
+        [
+          206,
+          123,
+          115
+        ],
+        [
+          173,
+          132,
+          123
+        ],
+        [
+          173,
+          115,
+          99
+        ],
+        [
+          214,
+          82,
+          99
+        ],
+        [
+          165,
+          74,
+          66
+        ]
+      ],
+      "darkest_feature_mapped_rgb8": [
+        74,
+        33,
+        25
+      ],
+      "aspect_preserved": "Proportional fit within a one-pixel guard, integer dimension rounding only"
+    },
+    "boss": {
+      "canvas": [
+        64,
+        128
+      ],
+      "opaque_bbox": [
+        2,
+        1,
+        60,
+        127
+      ],
+      "binary_alpha": true,
+      "opaque_palette_entries_used": 15,
+      "palette_rgb8": [
+        [
+          74,
+          33,
+          25
+        ],
+        [
+          255,
+          255,
+          247
+        ],
+        [
+          214,
+          214,
+          214
+        ],
+        [
+          239,
+          239,
+          239
+        ],
+        [
+          222,
+          222,
+          222
+        ],
+        [
+          214,
+          197,
+          197
+        ],
+        [
+          214,
+          181,
+          173
+        ],
+        [
+          214,
+          165,
+          156
+        ],
+        [
+          189,
+          173,
+          173
+        ],
+        [
+          206,
+          148,
+          140
+        ],
+        [
+          206,
+          123,
+          115
+        ],
+        [
+          173,
+          132,
+          123
+        ],
+        [
+          173,
+          115,
+          99
+        ],
+        [
+          214,
+          82,
+          99
+        ],
+        [
+          165,
+          74,
+          66
+        ]
+      ],
+      "darkest_feature_mapped_rgb8": [
+        74,
+        33,
+        25
+      ],
+      "aspect_preserved": "Proportional fit within a one-pixel guard, integer dimension rounding only"
+    },
+    "can": {
+      "canvas": [
+        32,
+        64
+      ],
+      "opaque_bbox": [
+        1,
+        8,
+        31,
+        56
+      ],
+      "binary_alpha": true,
+      "opaque_palette_entries_used": 15,
+      "palette_rgb8": [
+        [
+          41,
+          41,
+          33
+        ],
+        [
+          247,
+          230,
+          222
+        ],
+        [
+          197,
+          197,
+          181
+        ],
+        [
+          239,
+          222,
+          189
+        ],
+        [
+          230,
+          214,
+          173
+        ],
+        [
+          189,
+          181,
+          165
+        ],
+        [
+          132,
+          173,
+          156
+        ],
+        [
+          132,
+          140,
+          132
+        ],
+        [
+          16,
+          140,
+          132
+        ],
+        [
+          90,
+          115,
+          99
+        ],
+        [
+          8,
+          115,
+          107
+        ],
+        [
+          0,
+          115,
+          107
+        ],
+        [
+          41,
+          99,
+          82
+        ],
+        [
+          0,
+          90,
+          90
+        ],
+        [
+          25,
+          74,
+          66
+        ]
+      ],
+      "darkest_feature_mapped_rgb8": [
+        41,
+        41,
+        33
+      ],
+      "aspect_preserved": "Proportional fit within a one-pixel guard, integer dimension rounding only"
+    }
+  },
+  "fish_boss_palette_shared": true,
+  "repeated_conversion_identical": true,
+  "sunglasses_only_comparison": {
+    "passed": true,
+    "baseline": "work/pre-sunglasses",
+    "roms": {
+      "legacy-openmsx-internal": {
+        "baseline_sha256": "9d6f9a8a7c0b088a03cd9dc4f991fd13ce40952c7fffcaa070c46f507455858a",
+        "current_sha256": "9910d312e6cd9a75333a4b8eea14bebe1f9b64a7375a212da78c764846d10613",
+        "baseline_reconstructed_from_saved_assets_and_hash_matched": true,
+        "changed_bytes": 231,
+        "changes_outside_unused_front_atlas": 0,
+        "entire_runtime_and_palette_byte_identical": true
+      },
+      "legacy-openmsx": {
+        "baseline_sha256": "e775944e8081035c0fd00c398768b55d8d7b3ac9c04813e4ec525a1d356f75fe",
+        "current_sha256": "5a92a06638aa21aa674bbcd8bf56379d25ec065de9e3ba4ef75ff0e2bbcd5d69",
+        "baseline_reconstructed_from_saved_assets_and_hash_matched": true,
+        "changed_bytes": 231,
+        "changes_outside_unused_front_atlas": 0,
+        "entire_runtime_and_palette_byte_identical": true
+      }
+    },
+    "front_slot": [
+      0,
+      0,
+      48,
+      64
+    ],
+    "changed_atlas_pixels": 290,
+    "unchanged_assets": {
+      "motion.bin": "527b53e068f993378b22cca88aa403da25c5ae72733cd0c5acba44f54db32f8c",
+      "background-indexed.bin": "0703b8df2f0efb828d319c00e276281e3185324725c49a06cad35d086063ee61",
+      "floor-geometry.inc": "07dd5bde2c8c086ab9a4daad8489497bbc26d412b5bb4a2975e6e41fff2534e1",
+      "palette-rgb5.bin": "8acde8952cd0c59c6054c9211987265ee90f460980269d9dd1e207b6604ea862",
+      "palettes.inc": "b7fd088787f19ebe12c49156d2a356f079966fee6096ec685d983dfc389c2787",
+      "sky-art.png": "db07b8a6acc2a4491dcc999d80f6bc62f1269e23c96b84fade5729a9b1cf849a"
+    },
+    "all_other_atlas_pixels_unchanged": true,
+    "all_palette_bytes_unchanged": true,
+    "all_1536_hero_records_use_rear_source": true,
+    "front_source_not_added_to_palette_samples": true,
+    "new_front_source_sha256": "a47971653b3184b099b93e92be93d893916ecb72d1cf7d37420a976cf660f961"
+  }
+}

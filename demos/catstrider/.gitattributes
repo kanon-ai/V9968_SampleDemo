@@ -1,0 +1,2 @@
+# Preserve the bytes covered by the generated verification manifests.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

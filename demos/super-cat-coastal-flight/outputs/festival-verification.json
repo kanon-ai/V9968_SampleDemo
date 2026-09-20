@@ -1,7 +1,72 @@
 {
   "passed": true,
-  "changed_terrain_pixels": 1734,
-  "only_two_boat_regions_changed": true,
-  "motion_sprites_palette_and_runtime_unchanged": true,
-  "rom_sha256": "a427b2a5af8ce709fa963b56701c8bdd2c09abeecef6f98c60c8c4d45e4a26d0"
+  "world_area_multiplier": 1.5,
+  "world_size": [
+    256,
+    768
+  ],
+  "camera_y_range": [
+    124.0,
+    644.0
+  ],
+  "world_shadow_direction": [
+    0.6,
+    0.8
+  ],
+  "all_2048_light_vectors_verified": true,
+  "maximum_sprite_rounding_error_pixels": 0.9927332438500605,
+  "boat_cats": [
+    {
+      "cat": 0,
+      "unique_poses": 5,
+      "source_destination": [
+        66,
+        399
+      ]
+    },
+    {
+      "cat": 1,
+      "unique_poses": 5,
+      "source_destination": [
+        66,
+        444
+      ]
+    },
+    {
+      "cat": 2,
+      "unique_poses": 4,
+      "source_destination": [
+        72,
+        97
+      ]
+    },
+    {
+      "cat": 3,
+      "unique_poses": 5,
+      "source_destination": [
+        72,
+        142
+      ]
+    },
+    {
+      "cat": 4,
+      "unique_poses": 5,
+      "source_destination": [
+        64,
+        631
+      ]
+    },
+    {
+      "cat": 5,
+      "unique_poses": 4,
+      "source_destination": [
+        64,
+        676
+      ]
+    }
+  ],
+  "native_animation_phases_verified": 8,
+  "native_sprite_tables_verified": 16,
+  "rom_sha256": "d69e95214e8650f52ad53eea94ff4cb9e5a32727fab0a5c4977b5d0660e10ed0",
+  "hardware_tested": false
 }

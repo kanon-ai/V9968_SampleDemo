@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "changed_pixels": 1690,
+  "allowed_region": [
+    25,
+    573,
+    110,
+    605
+  ],
+  "outside_region_unchanged": true,
+  "sprite_motion_palette_runtime_unchanged": true,
+  "rom_sha256": "d69e95214e8650f52ad53eea94ff4cb9e5a32727fab0a5c4977b5d0660e10ed0"
+}

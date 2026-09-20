@@ -41,7 +41,7 @@ init_regs:
     ld hl,initial_palette
     ld bc,192*256+VDP_BASE+2
     otir
-    ; Background and sprite sheet: ROM banks4-15 -> VRAM20000-37FFF.
+    ; Terrain and atlas: ROM banks4-19 -> VRAM20000-3FFFF.
     ld a,8
     ld hl,0
     call vram_write_address
@@ -59,7 +59,7 @@ upload_block:
     jr nz,upload_block
     pop af
     inc a
-    cp 16
+    cp 20
     jr nz,upload_bank
     ld hl,0
     ld (frame_index),hl
@@ -80,6 +80,7 @@ upload_block:
 main_loop:
     call load_frame
     call wait_command
+    call festival_update
     ld a,47
     ld e,17
     call reg_write
@@ -209,7 +210,7 @@ load_frame:
     rlca
     and 3
     or b
-    add a,16
+    add a,20
     ld (06800h),a
     ld a,l
     and 03Fh
@@ -229,6 +230,42 @@ load_frame:
     ldir
     ret
 
+; Six precomposed 16x16 tiles animate cats on the actual boat decks.
+; Source atlas and terrain are never the visible framebuffer.
+festival_update:
+    ld a,(frame_index)
+    and 7
+    ret nz
+    ld a,(frame_index)
+    rrca
+    rrca
+    rrca
+    and 7
+    ld (festival_phase),a
+    ld l,a
+    ld h,0
+    add hl,hl
+    add hl,hl
+    add hl,hl
+    add hl,hl
+    add hl,hl
+    add hl,hl
+    add hl,hl
+    ld de,festival_commands
+    add hl,de
+    ld b,6
+festival_next:
+    push bc
+    ld a,32
+    ld e,17
+    call reg_write
+    ld bc,15*256+VDP_BASE+3
+    otir
+    call wait_command
+    pop bc
+    djnz festival_next
+    ret
+
 psg_write:
     ld a,e
     out (0A0h),a
@@ -237,10 +274,10 @@ psg_write:
     ret
 
 registers:
-    db 0,06h, 2,1Fh, 5,03h, 6,60h, 7,0, 8,08h, 9,80h
+    db 0,06h, 2,1Fh, 5,03h, 6,70h, 7,0, 8,08h, 9,80h
     db 11,02h, 18,0, 19,0, 23,0, 25,0, 26,0, 27,0
-    ; LRMM source window: X0..255, Y1024..1279.
-    db 51,0, 52,0, 53,0, 54,4, 55,255, 56,0, 57,255, 58,5
+    ; LRMM source window: X0..255, Y1024..1791.
+    db 51,0, 52,0, 53,0, 54,4, 55,255, 56,0, 57,255, 58,6
 registers_end:
 sprite_end:
     db 216,0,0,0,0,0,0,0
@@ -248,4 +285,7 @@ frame_index:
     dw 0
 draw_page:
     db 0
+festival_phase:
+    db 0
     include "assets/palettes.inc"
+    include "assets/festival-commands.inc"

@@ -3,15 +3,15 @@
   "records": 2048,
   "loop_seam_checked": true,
   "all_steps_forward": true,
-  "minimum_forward_source_step": 0.4663184548573298,
+  "minimum_forward_source_step": 0.3190660017560134,
   "all_transform_corners_in_source": true,
   "max_sprites_per_scanline_upper_bound": 10,
   "zoom_range": [
-    1.471264367816092,
+    1.5032104866549885,
     4.499995525673376
   ],
   "forward_pixels_per_frame_range": [
-    0.700726171573913,
-    7.542280005183663
+    0.5224503858683249,
+    5.891951222079085
   ]
 }

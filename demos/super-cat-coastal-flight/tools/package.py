@@ -13,6 +13,7 @@ def main():
     before=sha(ROM)
     subprocess.run([sys.executable,str(ROOT/'tools/build.py')],check=True)
     assert sha(ROM)==before,'Rebuild differs from captured ROM'
+    subprocess.run([sys.executable,str(ROOT/'tools/verify_extensions.py')],check=True)
     (OUT/'reproducibility.json').write_text(json.dumps(dict(passed=True,rom_sha256=before,
         rebuilt_from_sources=True),indent=2)+'\n')
     motion=json.loads((ROOT/'assets/motion.json').read_text())
@@ -26,7 +27,7 @@ def main():
         sx,sy,vx,vy=struct.unpack_from('<hhhh',raw,i*128)
         for x,y in ((0,0),(255,0),(0,211),(255,211)):
             assert 0<=sx+(x*vx-y*vy)/256<256
-            assert 1024<=sy+(x*vy+y*vx)/256<1536
+            assert 1024<=sy+(x*vy+y*vx)/256<1792
         for slot in range(10):
             yy,h,pal,xx,w,pattern=struct.unpack_from('<HBBHBB',raw,i*128+8+slot*8)
             assert yy>>14==2 and 0<h<256 and 0<w<256 and pal&15 in (1,2)
@@ -46,7 +47,7 @@ def main():
     video=OUT/'SUPER_CAT-COASTAL_FLIGHT.mp4'
     assert sha(video)==json.loads((OUT/'video-verification.json').read_text())['sha256']
     files=[p for folder in ('src','tools','assets') for p in (ROOT/folder).glob('*') if p.is_file()]
-    files += [ROOT/n for n in ('README.md','COPYRIGHT.md','DISCLAIMER.md','THIRD_PARTY_NOTICES.md','requirements.txt')]
+    files += [ROOT/n for n in ('README.md','TECHNIQUES.md','COPYRIGHT.md','DISCLAIMER.md','THIRD_PARTY_NOTICES.md','requirements.txt')]
     files += [ROM]+list(OUT.glob('*verification.json'))+[OUT/'reproducibility.json',OUT/'build-manifest.json']
     files=list(dict.fromkeys(files))
     target=OUT/'SUPER_CAT-COASTAL_FLIGHT-source-and-ROM.zip'

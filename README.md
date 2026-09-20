@@ -6,6 +6,8 @@ MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制�
 
 短いマントを背中に付けた猫が、提灯と肉球飾りでお祭り中の巨大屋形船へ飛んできます。見た目はジョーク、描画は本気の全画面変形です。**全画面の回転・拡大縮小・前方スクロール**を同時に行い、旋回中も前進し続ける512KiB ASCII8技術デモです。上昇・降下に応じた地形の倍率、影の変化、半透明の雲を組み合わせています。
 
+今回の更新では、仮想光源を地形の北西に固定し、旋回・高度に応じて猫の影を配置します。海岸を1.5倍に広げ、3隻の屋形船に計6匹の手を振る・踊る猫を追加しました。船上の猫は地形へ描き込んでから回転・拡縮するため、甲板と一緒に動きます。海岸の屋台も縞の布屋根・のれん・提灯のある姿へ描き直しました。設定と仕組みは技術解説に記載しています。
+
 ![SUPER CAT / COASTAL FLIGHT — actual V9968 openMSX capture](demos/super-cat-coastal-flight/outputs/preview.gif)
 
 - **[詳しい説明・起動方法 / Instructions](demos/super-cat-coastal-flight/README.md)**
@@ -16,7 +18,7 @@ MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制�
 
 実行録画は約59.92fpsで、補間や速度変更はありません。内蔵V9968のlegacy-openMSX構成で全画面変形の約59.92更新／秒、ループ、前進方向、原画転送、再ビルド一致を確認しました。実機・現行FPGA・外付け構成は未検証です。試作・無保証であり、継続的な修正・サポートは約束していません。
 
-**SUPER CAT / COASTAL FLIGHT** is an original automatic V9968 full-screen transform demo with continuous forward flight, banking, altitude changes, translucent clouds and a short-caped cat. The native MP4 retains approximately59.92 fps without interpolation. The internal legacy-openMSX profile was tested; physical hardware, current FPGA and external configurations are unverified. Supplied experimentally, without warranty or a commitment to support.
+**SUPER CAT / COASTAL FLIGHT** is an original automatic V9968 full-screen transform demo with continuous forward flight, banking, altitude changes, translucent clouds and a short-caped cat. The updated demo adds a fixed world-space light, six waving/dancing cats on three boats, a 1.5-times larger coast and redesigned festival stalls. See the technical explanation for shadow projection and HMMM deck animation. The native MP4 retains approximately59.92 fps without interpolation. The internal legacy-openMSX profile was tested; physical hardware, current FPGA and external configurations are unverified. Supplied experimentally, without warranty or a commitment to support.
 
 ---
 

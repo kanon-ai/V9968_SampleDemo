@@ -1,8 +1,9 @@
 {
-  "native_capture": "work/emulator/run-legacy-openmsx-internal-pt1hvwou",
-  "updates_per_second": 59.922739916391286,
-  "frames": 2158,
-  "source_upload_exact": true,
+  "native_capture": "work/emulator/run-legacy-openmsx-internal-t3a45s3e",
+  "updates_per_second": 59.922742474631,
+  "frames": 2159,
+  "source_upload_and_all_8_animation_phases_exact": true,
+  "all_16_sampled_sprite_tables_exact": true,
   "every_update_one_video_frame": true,
   "safe_page_presentations": true,
   "r800_dram": true,
@@ -11,7 +12,7 @@
   "hardware_tested": false,
   "profile": "legacy-openmsx-internal",
   "frame_interpolation": false,
-  "rom_sha256": "a427b2a5af8ce709fa963b56701c8bdd2c09abeecef6f98c60c8c4d45e4a26d0",
+  "rom_sha256": "d69e95214e8650f52ad53eea94ff4cb9e5a32727fab0a5c4977b5d0660e10ed0",
   "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
   "all_display_pages_alternate": true
 }

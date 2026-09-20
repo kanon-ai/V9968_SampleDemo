@@ -1,0 +1,17 @@
+{
+  "native_capture": "work/emulator/run-legacy-openmsx-internal-y6emo1wt",
+  "updates_per_second": 59.922739916391286,
+  "frames": 2158,
+  "source_upload_exact": true,
+  "every_update_one_video_frame": true,
+  "safe_page_presentations": true,
+  "r800_dram": true,
+  "consecutive_motion_records": true,
+  "loop_wrap_seen": true,
+  "hardware_tested": false,
+  "profile": "legacy-openmsx-internal",
+  "frame_interpolation": false,
+  "rom_sha256": "21cfdabc6f12f513ef124fe1429543fa82bf0547b833222b1562cd0abbbec4d1",
+  "emulator_sha256": "b5de3932c0e486002c2ca1fb0d858ad27fc10e97bc5a6b1b277f988f7b7454b9",
+  "all_display_pages_alternate": true
+}

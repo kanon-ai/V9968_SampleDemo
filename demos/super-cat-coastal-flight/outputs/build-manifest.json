@@ -1,0 +1,7 @@
+{
+  "sha256": "21cfdabc6f12f513ef124fe1429543fa82bf0547b833222b1562cd0abbbec4d1",
+  "rom_bytes": 524288,
+  "frames": 2048,
+  "profile": "legacy-openmsx-internal",
+  "hardware_tested": false
+}

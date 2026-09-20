@@ -2,7 +2,24 @@
 
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
-## 新しいデモ：CATSTRIDER
+## 新しいデモ：SUPER CAT / COASTAL FLIGHT
+
+短いマントを背中に付けた猫が海岸と巨大屋形船の上を飛びます。**全画面の回転・拡大縮小・前方スクロール**を同時に行い、旋回中も前進し続ける512KiB ASCII8技術デモです。上昇・降下に応じた地形の倍率、影の変化、半透明の雲を組み合わせています。
+
+![SUPER CAT / COASTAL FLIGHT — actual V9968 openMSX capture](demos/super-cat-coastal-flight/outputs/preview.gif)
+
+- **[詳しい説明・起動方法 / Instructions](demos/super-cat-coastal-flight/README.md)**
+- **[36秒のMP4・無音 / Native video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT.mp4)**
+- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-source-and-ROM.zip)**
+- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-V9968-legacy-openmsx-internal.rom)
+
+実行録画は約59.92fpsで、補間や速度変更はありません。内蔵V9968のlegacy-openMSX構成で全画面変形の約59.92更新／秒、ループ、前進方向、原画転送、再ビルド一致を確認しました。実機・現行FPGA・外付け構成は未検証です。試作・無保証であり、継続的な修正・サポートは約束していません。
+
+**SUPER CAT / COASTAL FLIGHT** is an original automatic V9968 full-screen transform demo with continuous forward flight, banking, altitude changes, translucent clouds and a short-caped cat. The native MP4 retains approximately59.92 fps without interpolation. The internal legacy-openMSX profile was tested; physical hardware, current FPGA and external configurations are unverified. Supplied experimentally, without warranty or a commitment to support.
+
+---
+
+## CATSTRIDER
 
 斜め後ろ姿の猫が、高速に流れる宇宙の床を滑走し、写真調の猫缶と銀桃色の鯛に出会います。112走査線のLRMM遠近描画、Sprite mode3の拡縮・半透明、光のリングと星の光跡を組み合わせた、**512 KiB ASCII8・約51.3秒の自動再生デモ**です。操作を伴うゲームではありません。
 

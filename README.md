@@ -9,6 +9,7 @@ MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制�
 ![SUPER CAT / COASTAL FLIGHT — actual V9968 openMSX capture](demos/super-cat-coastal-flight/outputs/preview.gif)
 
 - **[詳しい説明・起動方法 / Instructions](demos/super-cat-coastal-flight/README.md)**
+- **[技術解説 / Technical explanation](demos/super-cat-coastal-flight/TECHNIQUES.md)**
 - **[36秒のMP4・無音 / Native video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT.mp4)**
 - **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-source-and-ROM.zip)**
 - [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-V9968-legacy-openmsx-internal.rom)

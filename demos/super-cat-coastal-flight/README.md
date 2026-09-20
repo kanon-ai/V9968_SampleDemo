@@ -1,6 +1,6 @@
 # SUPER CAT / COASTAL FLIGHT
 
-マント猫が海岸と巨大屋形船の上を飛ぶ、**MSX turbo R＋V9968の全画面回転・拡大縮小・前方スクロールデモ**です。低空で駆け抜け、上昇して広く見渡し、旋回しながら前進を続けます。自動再生の技術サンプルで、操作するゲームではありません。
+マント猫が海岸と巨大屋形船の上を飛ぶ、**MSX turbo R＋V9968の全画面回転・拡大縮小・前方スクロールデモ**です。なぜか巨大屋形船は、提灯と肉球飾りで猫のお祭り中。空飛ぶ猫がお祭り見物に来た、というジョーク仕立てです。低空で駆け抜け、上昇して広く見渡し、旋回しながら前進を続けます。自動再生の技術サンプルで、操作するゲームではありません。
 
 ![Actual V9968 openMSX capture](outputs/preview.gif)
 
@@ -42,7 +42,7 @@ python tools/capture.py
 
 ## English
 
-**SUPER CAT / COASTAL FLIGHT** is an original automatic MSX turbo R + V9968 technical demo: full-screen rotation, zoom and continuous forward scrolling over a coast with oversized pleasure boats. A cat wearing a short cape on its back banks into turns while translucent clouds and an altitude-dependent shadow provide depth cues.
+**SUPER CAT / COASTAL FLIGHT** is an original automatic MSX turbo R + V9968 technical demo: full-screen rotation, zoom and continuous forward scrolling over a coast with oversized pleasure boats hosting a lantern-lit cat festival. The premise is deliberately silly; the full-screen transforms run on the emulated V9968. A cat wearing a short cape on its back banks into turns while translucent clouds and an altitude-dependent shadow provide depth cues.
 
 The 512 KiB ASCII8 ROM uses a live 256×212 LRMM transform and up to ten Sprite mode3 entries. Terrain is a static source image; the ROM stores motion parameters rather than completed video frames. A 2048-update loop follows four forward circuits with independent altitude changes.
 

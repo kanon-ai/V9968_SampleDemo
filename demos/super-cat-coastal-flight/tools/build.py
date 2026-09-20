@@ -71,6 +71,30 @@ def terrain():
         for yy in range(y-18,y+19,4):
             d.line((x-9,yy,x-2,yy-3),fill=12);d.line((x+2,yy-3,x+9,yy),fill=12)
             d.point((x-11,yy),fill=14);d.point((x+11,yy),fill=14)
+        # Festival lanterns hang outside both eaves: dark outline, amber
+        # paper, warm centre, cap and tassel remain legible during rotation.
+        for side in (-1,1):
+            lx=x+side*15
+            d.line((lx,y-24,lx,y+23),fill=14)
+            for yy in range(y-20,y+21,10):
+                d.line((x+side*10,yy-3,lx,yy-3),fill=10)
+                d.ellipse((lx-3,yy-3,lx+3,yy+4),fill=10)
+                d.ellipse((lx-2,yy-2,lx+2,yy+3),fill=15)
+                d.line((lx,yy-1,lx,yy+2),fill=14)
+                d.line((lx-1,yy-3,lx+1,yy-3),fill=14)
+                d.point((lx,yy+5),fill=15)
+        # Small pennants over the fore/aft decks, away from the roof tiles.
+        for yy in (y-27,y+27):
+            d.line((x-9,yy,x+9,yy),fill=14)
+            for n in range(4):
+                xx=x-8+n*4
+                d.polygon([(xx,yy+1),(xx+3,yy+1),(xx+1,yy+5)],fill=15 if n%2 else 14)
+        # The pleasure boat is hosting a completely unnecessary cat festival.
+        d.rectangle((x-6,y-10,x+6,y+11),fill=10)
+        d.rectangle((x-5,y-9,x+5,y+9),fill=15)
+        d.ellipse((x-3,y,x+3,y+6),fill=14)
+        for px,py in ((x-3,y-3),(x,y-5),(x+3,y-3)):
+            d.ellipse((px-1,py-1,px+1,py+1),fill=14)
     for x,y in ((160,68),(189,81),(213,74),(212,103)):
         d.ellipse((x-7,y-5,x+9,y+9),fill=6)
         d.ellipse((x-8,y-8,x+6,y+6),fill=12);d.arc((x-7,y-7,x+5,y+5),180,300,fill=14,width=2)

@@ -1,6 +1,6 @@
 # V9968新モードの検証結果 — 2026-09-22
 
-**openMSX 194a769の通常の `V9968` 新モードで、5デモすべてに表示不良を確認しました。新モード対応済みとは言えません。** 前回の `V9968_OLD` による回避は旧仕様互換の確認にとどまり、実機を目標とする対応ではありませんでした。推奨手順として撤回します。
+**openMSX 194a769の通常の `V9968` 新モードで、5デモすべてに表示不良を確認しました。新モード対応済みとは言えません。** 前回の `V9968_OLD` による回避は旧仕様互換の確認にとどまり、実機を目標とする対応ではありませんでした。現状は互換モードでの動作確認済み版として案内し、新モードへの追加対応は一旦保留します。[互換モードの設定と対応ROM](UPDATE-20260922.md)を参照してください。
 
 今回の検証では互換モードを一切使用していません。インストール済み実行ファイルやユーザーのマシン設定も変更していません。新モードで正常表示できない検証用ROMは、正式な対応ROMとして配布していません。
 
@@ -53,7 +53,7 @@ All five demos **fail visual validation in the current-register `V9968` model** 
 
 A confirmed blocker is VRAM allocation: the supplied internal machine configuration produces only 131072 bytes of physical VRAM in the new model. Access at 196608 returns `Invalid address`, while the demos require 256KiB. In the source, `hasEVR()` recognizes only the old model, but both 256KiB allocation and command-window masks still depend on that predicate. Other access paths must also be audited before declaring this resolved.
 
-The previous compatibility workaround is withdrawn as a recommendation for current-hardware development. Existing files remain historical evidence, not proof of current-model or FPGA compatibility. Failed candidates are not released as working ROMs. Physical hardware has not been tested.
+The current release is described as verified in compatibility mode only; further new-mode adaptation is on hold. Existing files remain historical evidence, not proof of current-model or FPGA compatibility. Failed candidates are not released as working ROMs. Physical hardware has not been tested.
 
 ## 一次資料
 

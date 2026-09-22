@@ -1,12 +1,12 @@
 # V9968 Sample Demos
 
-## 2026-09-22：新モードの検証結果・前回案内の訂正
+## 現在の動作状況（2026-09-22）
 
-**openMSX 194a769の通常の `V9968`（新レジスター）モードでは、現在の5デモは正常表示できていません。** 新仕様の初期化・SCREEN8のリニア配置に合わせた検証でも不良を確認しました。[新モードの確認結果と再現条件](NEW-MODE-STATUS.md)をご覧ください。
+**現状はopenMSX 194a769の `V9968_OLD` 互換モードで動作確認済みです。** [互換モード用の設定・対応ROM一覧](UPDATE-20260922.md)を参照し、各デモに合ったROMとXMLを組み合わせてください。
 
-前回の `V9968_OLD` を使う案内は旧仕様互換の検証であり、実機を目標とする新仕様対応ではありませんでした。新モード向けの推奨手順として撤回します。実機向けの作業は通常の `V9968` モードを基準とし、互換モードによる回避は採用しません。下記の既存配布物・録画は過去の検証資料です。
+通常の `V9968` 新モードでは表示不良を確認しており、実機での動作・性能も未検証です。互換モードでの結果を新仕様・実機対応の保証とはしていません。[新モードの検証記録](NEW-MODE-STATUS.md)は残し、追加対応は一旦保留します。
 
-**Correction:** The five demos have **not passed the current-register V9968 model** in openMSX 194a769. The earlier V9968_OLD workaround is historical compatibility evidence, not current-hardware support. See the [new-mode report](NEW-MODE-STATUS.md). No hardware validation is claimed.
+**Current status:** Operation is verified in openMSX 194a769 using the **V9968_OLD compatibility mode** and the matching ROMs/XML listed in the [guide](UPDATE-20260922.md). The current-register V9968 model has display issues; physical hardware remains untested. Further adaptation is on hold for now.
 
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 

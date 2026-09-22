@@ -1,10 +1,10 @@
 # CATSTRIDER — V9968 cosmic cat demo
 
-## 新モードについての訂正（2026-09-22）
+## 現在の動作状況（2026-09-22）
 
-**通常の `V9968` 新モードでの正常動作は未達です。** 前回追加した `openmsx-194a769` ROMと `V9968_OLD` 設定は旧仕様互換の試験用であり、実機準拠対応とは扱いません。[新モード検証報告](../../NEW-MODE-STATUS.md)を参照してください。既存ファイルは履歴として残しますが、新モードの推奨配布物ではありません。
+**openMSX 194a769の `V9968_OLD` 互換モードで動作確認済みです。** `openmsx-194a769` 版ROMと互換XMLを組み合わせてください。[設定と対応ROM一覧](../../UPDATE-20260922.md)を参照できます。通常の `V9968` 新モードでは表示不良があり、実機動作も未検証です。[新モードの検証記録](../../NEW-MODE-STATUS.md)を残し、追加対応は一旦保留します。
 
-**English:** The current-register V9968 model has not passed validation. Previous 194a769/V9968_OLD files are retained as historical compatibility tests, not current-hardware support. See the linked report.
+**English:** Verified in openMSX 194a769 with V9968_OLD compatibility mode and the matching 194a769 ROM. Current-register mode has display issues; hardware remains untested. Further adaptation is on hold.
 
 
 斜め後ろ姿の猫が、宇宙の床を滑走し、写真調の猫缶と巨大な魚に出会う技術デモです。写真のような毛並み、魚の鱗、金属缶とミーム風の不条理な雰囲気を、**MSX turbo R + V9968 / 512 KiB ASCII8 ROM** へ持ち込みます。

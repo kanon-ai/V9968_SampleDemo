@@ -1,10 +1,12 @@
 # V9968 Sample Demos
 
-## 2026-09-22：openMSX更新への対応
+## 2026-09-22：新モードの検証結果・前回案内の訂正
 
-**最新版194a769では設定変更と、一部デモの専用ROMが必要です。** [対応表・起動設定・新版ROM・検証動画](UPDATE-20260922.md) を先に確認してください。森・結晶・宇宙猫の表示崩れに対応しました。PRISMとSUPER CATはROMを変更せず、互換XMLで動作を確認しています。
+**openMSX 194a769の通常の `V9968`（新レジスター）モードでは、現在の5デモは正常表示できていません。** 新仕様の初期化・SCREEN8のリニア配置に合わせた検証でも不良を確認しました。[新モードの確認結果と再現条件](NEW-MODE-STATUS.md)をご覧ください。
 
-**openMSX 194a769 users:** use the [compatibility guide and updated downloads](UPDATE-20260922.md). The original downloads below target d884c4b.
+前回の `V9968_OLD` を使う案内は旧仕様互換の検証であり、実機を目標とする新仕様対応ではありませんでした。新モード向けの推奨手順として撤回します。実機向けの作業は通常の `V9968` モードを基準とし、互換モードによる回避は採用しません。下記の既存配布物・録画は過去の検証資料です。
+
+**Correction:** The five demos have **not passed the current-register V9968 model** in openMSX 194a769. The earlier V9968_OLD workaround is historical compatibility evidence, not current-hardware support. See the [new-mode report](NEW-MODE-STATUS.md). No hardware validation is claimed.
 
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 

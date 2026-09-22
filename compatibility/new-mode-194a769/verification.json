@@ -1,0 +1,48 @@
+{
+  "emulator_revision": "194a769d98efd02c8a66a35e50e8e7790eb85efe",
+  "emulator_sha256": "2ff553d82aee092a615e6a0431545eda5fe6e084ff6fecaa91bfb879339847f8",
+  "vdp_version": "V9968",
+  "compatibility_mode_used": false,
+  "machine_xml_vram_kib": 128,
+  "reported_physical_vram_bytes": 131072,
+  "required_physical_vram_bytes": 262144,
+  "probe": "debug size {physical VRAM}; debug write at 196608 returns Invalid address",
+  "hardware_tested": false,
+  "demos": [
+    {
+      "demo": "PRISM_FLIGHT",
+      "initialization": "R20=1Fh R21=3Ah",
+      "candidate_rom_sha256": "106ca784639765e2555de4e1d927ff3077b7bf213b95b27875d1bd558f1251dc",
+      "emulated_seconds": 18,
+      "display_passed": false
+    },
+    {
+      "demo": "SUPER_CAT-COASTAL_FLIGHT",
+      "initialization": "R20=1Fh R21=3Ah",
+      "candidate_rom_sha256": "c0ad7363537b156a25f15c08b0fac64fec9353eada419f5306844a03f3406348",
+      "emulated_seconds": 18,
+      "display_passed": false
+    },
+    {
+      "demo": "LUMEN_FORGE",
+      "initialization": "R20=1Fh R21=3Ah",
+      "candidate_rom_sha256": "7ecf334ce5beb185f049dacf6cb3b3f96f5146eff0dd1c75797243c3ce786015",
+      "emulated_seconds": 18,
+      "display_passed": false
+    },
+    {
+      "demo": "MIST_VALE",
+      "initialization": "R20=1Fh R21=3Ah",
+      "candidate_rom_sha256": "4a9d8cf4261784798d910c456a844cd9a95a068a3c36bf201a33c8392726fd0a",
+      "emulated_seconds": 18,
+      "display_passed": false
+    },
+    {
+      "demo": "CATSTRIDER",
+      "initialization": "R20=1Fh R21=3Ah",
+      "candidate_rom_sha256": "c6a1c58e4264703aa71f2d5554b44e841464773f757ef3e62dd57d3b196fd8f7",
+      "emulated_seconds": 18,
+      "display_passed": false
+    }
+  ]
+}

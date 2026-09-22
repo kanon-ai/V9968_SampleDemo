@@ -1,14 +1,10 @@
 # LUMEN / FORGE implementation notes
 
-## openMSX 194a769 対応版（2026-09-22）
+## 新モードについての訂正（2026-09-22）
 
-最新版向けには **[対応ROM](outputs/LUMEN_FORGE-V9968-openmsx-194a769-internal.rom)** と **`V9968_OLD` の互換マシン設定**を組み合わせてください。通常の `V9968` 設定では表示が崩れます。旧ROMと新ROMの混用も避けてください。
+**通常の `V9968` 新モードでの正常動作は未達です。** 前回追加した `openmsx-194a769` ROMと `V9968_OLD` 設定は旧仕様互換の試験用であり、実機準拠対応とは扱いません。[新モード検証報告](../../NEW-MODE-STATUS.md)を参照してください。既存ファイルは履歴として残しますが、新モードの推奨配布物ではありません。
 
-[設定・変更点・全デモの対応表](../../UPDATE-20260922.md) · [最新版での12秒実行動画](outputs/LUMEN_FORGE-194a769.mp4) · [外付け用ROM](outputs/LUMEN_FORGE-V9968-openmsx-194a769-external.rom)
-
-SCREEN8＋SP3をリニアVRAM配置へ変更し、旧版用のスプライト属性の二重書込みを廃止しました。素材・航路・演出内容は維持しています。内蔵／外付け構成で各65秒、ループ・両表示ページ・属性・原画転送を検証済みです。実機は未検証です。再ビルドは `python tools/build_updated.py`。下記の旧動画・ZIP・`tools/build.py` は d884c4b 向けの記録として残しています。
-
-**English:** For openMSX 194a769 use the new ROM above **with the V9968_OLD compatibility XML**, not the default V9968 model. Linear SCREEN8/SP3 addressing replaces the old planar upload and duplicate SAT writes. Both port profiles passed 65-second emulator checks. The original artwork and choreography are retained; hardware remains untested. Older downloads below target d884c4b.
+**English:** The current-register V9968 model has not passed validation. Previous 194a769/V9968_OLD files are retained as historical compatibility tests, not current-hardware support. See the linked report.
 
 
 This sample targets the d884c4b V9968 openMSX implementation. It is not a hardware benchmark.

@@ -1,5 +1,16 @@
 # CATSTRIDER — V9968 cosmic cat demo
 
+## openMSX 194a769 対応版（2026-09-22）
+
+最新版向けには **[対応ROM](outputs/CATSTRIDER-V9968-openmsx-194a769-internal.rom)** と **`V9968_OLD` の互換マシン設定**を組み合わせてください。通常の `V9968` 設定では表示が崩れます。旧ROMと新ROMの混用も避けてください。
+
+[設定・変更点・全デモの対応表](../../UPDATE-20260922.md) · [最新版での12秒実行動画](outputs/CATSTRIDER-194a769.mp4) · [外付け用ROM](outputs/CATSTRIDER-V9968-openmsx-194a769-external.rom)
+
+SCREEN8＋SP3をリニアVRAM配置へ変更し、旧版用のスプライト属性の二重書込みを廃止しました。素材・航路・演出内容は維持しています。内蔵／外付け構成で各65秒、ループ・両表示ページ・属性・原画転送を検証済みです。実機は未検証です。再ビルドは `python tools/build_updated.py`。下記の旧動画・ZIP・`tools/build.py` は d884c4b 向けの記録として残しています。
+
+**English:** For openMSX 194a769 use the new ROM above **with the V9968_OLD compatibility XML**, not the default V9968 model. Linear SCREEN8/SP3 addressing replaces the old planar upload and duplicate SAT writes. Both port profiles passed 65-second emulator checks. The original artwork and choreography are retained; hardware remains untested. Older downloads below target d884c4b.
+
+
 斜め後ろ姿の猫が、宇宙の床を滑走し、写真調の猫缶と巨大な魚に出会う技術デモです。写真のような毛並み、魚の鱗、金属缶とミーム風の不条理な雰囲気を、**MSX turbo R + V9968 / 512 KiB ASCII8 ROM** へ持ち込みます。
 
 **自動再生・操作なしの1ステージ**です。導入、宇宙の中盤、巨大魚、フィナーレまで、1536フレームを再生します。内蔵・外付け構成のopenMSX実測は約29.96更新／秒、一周は約51.3秒です。起動待ち時間は含みません。

@@ -1,5 +1,16 @@
 # MIST / VALE — V9968 forest and water study
 
+## openMSX 194a769 対応版（2026-09-22）
+
+最新版向けには **[対応ROM](outputs/MIST_VALE-V9968-openmsx-194a769-internal.rom)** と **`V9968_OLD` の互換マシン設定**を組み合わせてください。通常の `V9968` 設定では表示が崩れます。旧ROMと新ROMの混用も避けてください。
+
+[設定・変更点・全デモの対応表](../../UPDATE-20260922.md) · [最新版での12秒実行動画](outputs/MIST_VALE-194a769.mp4) · [外付け用ROM](outputs/MIST_VALE-V9968-openmsx-194a769-external.rom)
+
+SCREEN8＋SP3をリニアVRAM配置へ変更し、旧版用のスプライト属性の二重書込みを廃止しました。素材・航路・演出内容は維持しています。内蔵／外付け構成で各65秒、ループ・両表示ページ・属性・原画転送を検証済みです。実機は未検証です。再ビルドは `python tools/build_updated.py`。下記の旧動画・ZIP・`tools/build.py` は d884c4b 向けの記録として残しています。
+
+**English:** For openMSX 194a769 use the new ROM above **with the V9968_OLD compatibility XML**, not the default V9968 model. Linear SCREEN8/SP3 addressing replaces the old planar upload and duplicate SAT writes. Both port profiles passed 65-second emulator checks. The original artwork and choreography are retained; hardware remains untested. Older downloads below target d884c4b.
+
+
 朝焼けの山、木々と一緒に水平に流れる手前の岸辺、少し速く斜めへ漂う霧、波打つ水面。**MSX turbo R + V9968 / 512KiB ASCII8** の自動再生デモです。
 
 山・空・遠い森は固定し、木々とその足元の岸辺を同じ位置変化で水平に動かします。霧の半透明にはSprite mode3、水面の揺らぎには走査線割り込みを使います。既存のPRISM FLIGHT・AURORA VEIL・LUMEN / FORGEから独立したサンプルです。

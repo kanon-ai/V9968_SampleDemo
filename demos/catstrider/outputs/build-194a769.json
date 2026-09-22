@@ -1,0 +1,18 @@
+[
+  {
+    "file": "CATSTRIDER-V9968-openmsx-194a769-internal.rom",
+    "sha256": "4402e6724a179a49f5fc6d8b9526df7095c335ca572a4eccc62a34e2b5d60953",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  },
+  {
+    "file": "CATSTRIDER-V9968-openmsx-194a769-external.rom",
+    "sha256": "72e73d61b8025e3b410dd036400caab98f14173ac639e5b9aeb7b1ac6002f010",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  }
+]

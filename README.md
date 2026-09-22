@@ -1,5 +1,11 @@
 # V9968 Sample Demos
 
+## 2026-09-22：openMSX更新への対応
+
+**最新版194a769では設定変更と、一部デモの専用ROMが必要です。** [対応表・起動設定・新版ROM・検証動画](UPDATE-20260922.md) を先に確認してください。森・結晶・宇宙猫の表示崩れに対応しました。PRISMとSUPER CATはROMを変更せず、互換XMLで動作を確認しています。
+
+**openMSX 194a769 users:** use the [compatibility guide and updated downloads](UPDATE-20260922.md). The original downloads below target d884c4b.
+
 MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
 ## 新しいデモ：SUPER CAT / COASTAL FLIGHT

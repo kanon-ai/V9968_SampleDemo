@@ -1,0 +1,18 @@
+[
+  {
+    "file": "MIST_VALE-V9968-openmsx-194a769-internal.rom",
+    "sha256": "f00d8bc11283ad2accbb9e47f9ff3d4016c9d3d888c1decbbad3dd54a2090103",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  },
+  {
+    "file": "MIST_VALE-V9968-openmsx-194a769-external.rom",
+    "sha256": "f72b30fc85fe33be20e3325ce2b7330b1013f67d9ec608f95282861b706851b0",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  }
+]

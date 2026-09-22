@@ -1,5 +1,16 @@
 # LUMEN / FORGE — V9968 kinetic light study
 
+## openMSX 194a769 対応版（2026-09-22）
+
+最新版向けには **[対応ROM](outputs/LUMEN_FORGE-V9968-openmsx-194a769-internal.rom)** と **`V9968_OLD` の互換マシン設定**を組み合わせてください。通常の `V9968` 設定では表示が崩れます。旧ROMと新ROMの混用も避けてください。
+
+[設定・変更点・全デモの対応表](../../UPDATE-20260922.md) · [最新版での12秒実行動画](outputs/LUMEN_FORGE-194a769.mp4) · [外付け用ROM](outputs/LUMEN_FORGE-V9968-openmsx-194a769-external.rom)
+
+SCREEN8＋SP3をリニアVRAM配置へ変更し、旧版用のスプライト属性の二重書込みを廃止しました。素材・航路・演出内容は維持しています。内蔵／外付け構成で各65秒、ループ・両表示ページ・属性・原画転送を検証済みです。実機は未検証です。再ビルドは `python tools/build_updated.py`。下記の旧動画・ZIP・`tools/build.py` は d884c4b 向けの記録として残しています。
+
+**English:** For openMSX 194a769 use the new ROM above **with the V9968_OLD compatibility XML**, not the default V9968 model. Linear SCREEN8/SP3 addressing replaces the old planar upload and duplicate SAT writes. Both port profiles passed 65-second emulator checks. The original artwork and choreography are retained; hardware remains untested. Older downloads below target d884c4b.
+
+
 暗い展示室に浮かぶ三枚の結晶と、逆方向へ回る金色の光輪。**回転・拡大・縮小・半透明を同時に使う、MSX turbo R + V9968用の512KiB ASCII8技術デモ**です。
 
 前作の宇宙風景から構図を変え、背景の建築や文字を固定しました。回転はV9968のLRMMコマンドで原画を毎回描き直し、拡縮と半透明はSprite mode3で表示します。録画映像や角度ごとの完成画像をROMから再生する方式ではありません。

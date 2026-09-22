@@ -1,0 +1,18 @@
+[
+  {
+    "file": "LUMEN_FORGE-V9968-openmsx-194a769-internal.rom",
+    "sha256": "39361333c9f80a697547a85232b089423dcbb2923bc160b06a5363ebf1ef87e4",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  },
+  {
+    "file": "LUMEN_FORGE-V9968-openmsx-194a769-external.rom",
+    "sha256": "9754fc08d6bf0b60ba3c13b351ef5ba36ba4f505da9b76fa329d9a2dbb6b6b88",
+    "bytes": 524288,
+    "vdp_xml": "V9968_OLD",
+    "emulator": "194a769",
+    "hardware_tested": false
+  }
+]

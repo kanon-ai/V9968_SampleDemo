@@ -1,0 +1,26 @@
+[
+  {
+    "file": "demos/catstrider/outputs/CATSTRIDER-194a769.mp4",
+    "sha256": "25af286fee7197b1b8f55b76efbb4f2a2a6e1928f1206ebadf1fbb42c4e305f4",
+    "decode_passed": true,
+    "native_recording_seconds": 12,
+    "frame_interpolation": false,
+    "speed_change": false
+  },
+  {
+    "file": "demos/lumen-forge/outputs/LUMEN_FORGE-194a769.mp4",
+    "sha256": "229403b14b541ff5dc50e3d71e8d77bc3b54c41e9ac42a97b8584f3fd8762027",
+    "decode_passed": true,
+    "native_recording_seconds": 12,
+    "frame_interpolation": false,
+    "speed_change": false
+  },
+  {
+    "file": "demos/mist-vale/outputs/MIST_VALE-194a769.mp4",
+    "sha256": "c8902b71f5ccd0a2162936b878b456b5637bea491ba44b0dd55e93da75df0bf6",
+    "decode_passed": true,
+    "native_recording_seconds": 12,
+    "frame_interpolation": false,
+    "speed_change": false
+  }
+]

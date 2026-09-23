@@ -1,6 +1,6 @@
 # V9968 Sample Demos v2.0.0 — 新仕様対応版
 
-**2026年9月23日時点では、V9968対応BlueMSX Plusでのみ動作確認しています。新バージョンの実行にはV9968対応BlueMSX Plusをご使用ください。** 旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](https://github.com/kanon-ai/V9968_SampleDemo/blob/main/UPDATE-20260922.md)を参照してください。
+**2026年9月23日、公開済みv2.0.0の全5本をV9968対応BlueMSX PlusとopenMSX V9968 c620b69の双方で動作確認しました。新版はどちらでも実行できます。openMSXでは新仕様の `V9968` を使用し、互換モードは使用しません。** 旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](https://github.com/kanon-ai/V9968_SampleDemo/blob/main/UPDATE-20260922.md)を参照してください。
 
 実機を目標に現行V9968仕様へ対応した試作技術デモです。実機での動作・性能は未確認です。無保証で、継続的な修正やサポートを約束するものではありません。[免責事項](../DISCLAIMER.md)・[利用条件](../COPYRIGHT.md)を参照してください。
 
@@ -25,6 +25,14 @@
 
 BIOSとエミュレータ本体は同梱していません。所有するBIOSを各自の環境で使用してください。旧版の互換モード用ROMと新版ROMを混在させないでください。
 
+## openMSXでの起動・今後の検証
+
+[openMSX V9968 c620b69](https://buppu3.github.io/) と `Panasonic_FS-A1ST_V9968` を使用し、公開ROMをASCII8で読み込んでください。VDPは `V9968`、内蔵98h–9Ch、timing=0です。`V9968_OLD` は使用しません。
+
+今後の変更はBlueMSX PlusとopenMSXの両方で検証します。どちらか未検証の場合はその範囲を明記します。[追加検証の詳細](OPENMSX-20260923.md)。ROMと既存リリースZIPは変更していません。
+
+Future changes will be checked with both emulators; any untested scope will be stated explicitly. Physical hardware remains untested.
+
 ## 今回の対応
 
 - 現行のモードレジスターで初期化します。R20=1Fh、R21=3Ah、V58=0。
@@ -45,7 +53,7 @@ Python 3とPasmoを用意し、環境変数 `PASMO` にPasmo実行ファイル�
 
 ## English
 
-**As of September 23, 2026, this new version has been verified only with V9968-capable BlueMSX Plus. Please use V9968-capable BlueMSX Plus to run it. The previous version remains runnable in openMSX compatibility mode.**
+**As of September 23, 2026, all five v2.0.0 demos have been verified with both V9968-capable BlueMSX Plus and openMSX V9968 c620b69. Either tested emulator can run this version; use current-specification V9968 mode in openMSX, not compatibility mode. The previous version remains runnable in openMSX compatibility mode.**
 
 Version 2.0.0 targets the current V9968 specification. It includes five automatic ASCII8 demos for MSX turbo R, using an internal V9968 at ports 98h–9Ch with 256KB VRAM. The tested emulator is a local Release x64 build of the linked experimental/v9968 branch at the commit above, not a claim that every regular BlueMSX Plus release supports V9968. Artwork and choreography are preserved. Source and frozen generated assets rebuild into the exact verified ROMs.
 

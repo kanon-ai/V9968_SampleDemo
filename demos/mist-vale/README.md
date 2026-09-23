@@ -1,8 +1,8 @@
 # MIST / VALE — V9968 forest and water study
 
-> **v2.0.0：新仕様V9968対応版は[こちら](../../current/README.md)。2026年9月23日時点ではV9968対応BlueMSX Plusでのみ確認しています。以下は旧版の説明・記録です。旧版はopenMSX互換モードで動作可能です。**
+> **v2.0.0：新仕様V9968対応版は[こちら](../../current/README.md)。2026年9月23日にV9968対応BlueMSX PlusとopenMSX V9968 c620b69の双方で確認しています。以下は旧版の説明・記録です。旧版はopenMSX互換モードで動作可能です。**
 
-> **Current version: [v2.0.0](../../current/README.md), verified only with V9968-capable BlueMSX Plus as of September 23, 2026. The material below describes the previous version.**
+> **Current version: [v2.0.0](../../current/README.md), verified with both V9968-capable BlueMSX Plus and openMSX V9968 c620b69 as of September 23, 2026. The material below describes the previous version.**
 
 
 

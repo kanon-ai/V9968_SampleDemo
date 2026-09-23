@@ -1,14 +1,14 @@
 # V9968 Sample Demos — v2.0.0
 
-**新仕様V9968対応版を公開しました。2026年9月23日時点では、V9968対応BlueMSX Plusでのみ動作確認しています。新バージョンの実行にはV9968対応BlueMSX Plusをご使用ください。**
+**新仕様V9968対応版を公開しました。2026年9月23日、公開済みv2.0.0の全5本をV9968対応BlueMSX PlusとopenMSX V9968 c620b69の双方で動作確認しました。新版はどちらでも実行できます。openMSXでは新仕様の `V9968` を使用し、互換モードは使用しません。**
 
 旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](UPDATE-20260922.md)は引き続き参照できます。
 
-**The new version targets the current V9968 specification. As of September 23, 2026, it has been verified only with V9968-capable BlueMSX Plus. Please use V9968-capable BlueMSX Plus to run it. The previous version remains runnable in openMSX compatibility mode.**
+**The new version targets the current V9968 specification. As of September 23, 2026, all five v2.0.0 demos have been verified with both V9968-capable BlueMSX Plus and openMSX V9968 c620b69. Either tested emulator can run this version; use current-specification V9968 mode in openMSX, not compatibility mode. The previous version remains runnable in openMSX compatibility mode.**
 
 - **[v2.0.0 ダウンロード / Release](https://github.com/kanon-ai/V9968_SampleDemo/releases/tag/v2.0.0)**
 - **[新版のROM一覧・起動方法・再ビルド / Current ROMs and instructions](current/README.md)**
-- [確認環境・検証範囲 / Verification](current/verification.json)
+- [BlueMSX Plus検証記録](current/verification.json) · [openMSX追加検証・今後の方針](current/OPENMSX-20260923.md)
 
 MSX turbo R + V9968の描画機能を、楽しめる映像で紹介する自動再生の技術デモ集です。5本とも現行のモードレジスターとVRAM配置に対応し、原画・動き・音は維持しています。実機を目標にしていますが、実機での動作・性能は未確認です。試作・無保証で、継続的な修正・サポートを約束するものではありません。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
@@ -56,7 +56,7 @@ MSX turbo R + V9968の描画機能を、楽しめる映像で紹介する自動�
 
 | 版 | 実行環境 | 案内 |
 |---|---|---|
-| v2.0.0 新仕様 / Current specification | V9968対応BlueMSX Plus | [新版](current/README.md) |
+| v2.0.0 新仕様 / Current specification | V9968対応BlueMSX Plus / openMSX V9968 c620b69 | [新版](current/README.md) |
 | 旧版 / Previous version | V9968対応openMSXの互換モード | [旧版](UPDATE-20260922.md) |
 
 V9968対応BlueMSX Plusの検証ビルドは、experimental/v9968ブランチの指定コミットです。通常配布版との区別を含め、[起動方法](current/README.md)を確認してください。BIOSとエミュレータ本体は同梱していません。

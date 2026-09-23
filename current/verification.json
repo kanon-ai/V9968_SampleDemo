@@ -1,0 +1,181 @@
+{
+  "version": "2.0.0",
+  "date": "2026-09-23",
+  "emulator": "blueMSX Plus experimental/v9968 local Release x64 build",
+  "emulator_source_commit": "7f7a2572604dcd3dc82ba4cc7a8b7f6c9b3a9d92",
+  "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32",
+  "machine": "FS-A1ST-based V9968 / 256KB VRAM",
+  "ports": "98h-9Ch",
+  "emulation_speed": 100,
+  "vdp_speed": 100,
+  "physical_hardware_tested": false,
+  "coverage": "Natural execution, visual checks and sampled saved-state VRAM/SAT comparisons. Not an exhaustive every-frame or physical-hardware test.",
+  "samples": [
+    {
+      "name": "PRISM_FLIGHT",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 31,
+      "screen": 5,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 263,
+      "vram_sha256": "c616ed3f127599249de4fa1e1afaf4e34e39b7447f9fe6f2fb7e1613c9af1ad0",
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        6,
+        262
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "PRISM_FLIGHT-V9968-current-internal_00",
+      "rom_sha256": "106ca784639765e2555de4e1d927ff3077b7bf213b95b27875d1bd558f1251dc"
+    },
+    {
+      "name": "PRISM_FLIGHT",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 31,
+      "screen": 5,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 249,
+      "vram_sha256": "9b81cc23824ce4e7edfdc0a2fc8528a9d6d654a1ec4c08b55d23cff4c920ca40",
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        248,
+        504
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "PRISM_FLIGHT-V9968-current-internal_01",
+      "rom_sha256": "106ca784639765e2555de4e1d927ff3077b7bf213b95b27875d1bd558f1251dc"
+    },
+    {
+      "name": "SUPER_CAT-COASTAL_FLIGHT",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 31,
+      "screen": 5,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 47,
+      "vram_sha256": "a58ce80a7a326271013fad38d784b889dc6cc2fbee5978d27db821d4ad02d709",
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        46
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "SUPER_CAT-COASTAL_FLIGHT-V9968-current-internal_00",
+      "rom_sha256": "c0ad7363537b156a25f15c08b0fac64fec9353eada419f5306844a03f3406348"
+    },
+    {
+      "name": "LUMEN_FORGE",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 31,
+      "screen": 8,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 207,
+      "vram_sha256": "b793690ec85f81a4ab8524cf82d18a3550fea0e88f0f1bbbe523a5fce1e7ec7a",
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        205,
+        206
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "LUMEN_FORGE-V9968-current-internal_00",
+      "rom_sha256": "7ecf334ce5beb185f049dacf6cb3b3f96f5146eff0dd1c75797243c3ce786015"
+    },
+    {
+      "name": "LUMEN_FORGE",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 63,
+      "screen": 8,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 529,
+      "vram_sha256": "1d28e9918dc17f4a82dce16dace0f03f15f55dbb1fde491909e2b6c03965c5ad",
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        528,
+        529
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "LUMEN_FORGE-V9968-current-internal_01",
+      "rom_sha256": "7ecf334ce5beb185f049dacf6cb3b3f96f5146eff0dd1c75797243c3ce786015"
+    },
+    {
+      "name": "MIST_VALE",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 63,
+      "screen": 8,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 776,
+      "vram_sha256": "619a8cf0dfd6d2b89f29da1deedce444b784d6fc1893e6614329ba06faf24f31",
+      "irq_counts": 31064,
+      "raster_counts": 31064,
+      "vblank_counts": 2824,
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        774,
+        775
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "current_00",
+      "rom_sha256": "4a9d8cf4261784798d910c456a844cd9a95a068a3c36bf201a33c8392726fd0a"
+    },
+    {
+      "name": "MIST_VALE",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 63,
+      "screen": 8,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 310,
+      "vram_sha256": "613a69351e476d86608e3ee8f3fd39a8f07e156dc4dccf21da52bf77520eff3b",
+      "irq_counts": 18770,
+      "raster_counts": 18770,
+      "vblank_counts": 13622,
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        308,
+        309
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "current_01",
+      "rom_sha256": "4a9d8cf4261784798d910c456a844cd9a95a068a3c36bf201a33c8392726fd0a"
+    },
+    {
+      "name": "CATSTRIDER",
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "r2": 63,
+      "screen": 8,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "frame_index": 672,
+      "vram_sha256": "1084130b083bd00a090c7f85a9ba370ccdba960dbfb50f8b2d9c47ef159ae780",
+      "irq_counts": 4417,
+      "vblank_counts": 4417,
+      "static_upload_exact": true,
+      "sat_matches_motion_frames": [
+        671
+      ],
+      "sat_terminator_valid": true,
+      "snapshot": "CATSTRIDER-V9968-current-internal_00",
+      "rom_sha256": "c6a1c58e4264703aa71f2d5554b44e841464773f757ef3e62dd57d3b196fd8f7"
+    }
+  ]
+}

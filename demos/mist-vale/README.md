@@ -1,10 +1,9 @@
 # MIST / VALE — V9968 forest and water study
 
-## 現在の動作状況（2026-09-22）
+> **v2.0.0：新仕様V9968対応版は[こちら](../../current/README.md)。2026年9月23日時点ではV9968対応BlueMSX Plusでのみ確認しています。以下は旧版の説明・記録です。旧版はopenMSX互換モードで動作可能です。**
 
-**openMSX 194a769の `V9968_OLD` 互換モードで動作確認済みです。** `openmsx-194a769` 版ROMと互換XMLを組み合わせてください。[設定と対応ROM一覧](../../UPDATE-20260922.md)を参照できます。通常の `V9968` 新モードでは表示不良があり、実機動作も未検証です。[新モードの検証記録](../../NEW-MODE-STATUS.md)を残し、追加対応は一旦保留します。
+> **Current version: [v2.0.0](../../current/README.md), verified only with V9968-capable BlueMSX Plus as of September 23, 2026. The material below describes the previous version.**
 
-**English:** Verified in openMSX 194a769 with V9968_OLD compatibility mode and the matching 194a769 ROM. Current-register mode has display issues; hardware remains untested. Further adaptation is on hold.
 
 
 朝焼けの山、木々と一緒に水平に流れる手前の岸辺、少し速く斜めへ漂う霧、波打つ水面。**MSX turbo R + V9968 / 512KiB ASCII8** の自動再生デモです。

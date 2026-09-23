@@ -1,197 +1,64 @@
-# V9968 Sample Demos
+# V9968 Sample Demos — v2.0.0
 
-## 現在の動作状況（2026-09-22）
+**新仕様V9968対応版を公開しました。2026年9月23日時点では、V9968対応BlueMSX Plusでのみ動作確認しています。新バージョンの実行にはV9968対応BlueMSX Plusをご使用ください。**
 
-**現状はopenMSX 194a769の `V9968_OLD` 互換モードで動作確認済みです。** [互換モード用の設定・対応ROM一覧](UPDATE-20260922.md)を参照し、各デモに合ったROMとXMLを組み合わせてください。
+旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](UPDATE-20260922.md)は引き続き参照できます。
 
-通常の `V9968` 新モードでは表示不良を確認しており、実機での動作・性能も未検証です。互換モードでの結果を新仕様・実機対応の保証とはしていません。[新モードの検証記録](NEW-MODE-STATUS.md)は残し、追加対応は一旦保留します。
+**The new version targets the current V9968 specification. As of September 23, 2026, it has been verified only with V9968-capable BlueMSX Plus. Please use V9968-capable BlueMSX Plus to run it. The previous version remains runnable in openMSX compatibility mode.**
 
-**Current status:** Operation is verified in openMSX 194a769 using the **V9968_OLD compatibility mode** and the matching ROMs/XML listed in the [guide](UPDATE-20260922.md). The current-register V9968 model has display issues; physical hardware remains untested. Further adaptation is on hold for now.
+- **[v2.0.0 ダウンロード / Release](https://github.com/kanon-ai/V9968_SampleDemo/releases/tag/v2.0.0)**
+- **[新版のROM一覧・起動方法・再ビルド / Current ROMs and instructions](current/README.md)**
+- [確認環境・検証範囲 / Verification](current/verification.json)
 
-MSX turbo R + V9968の表示機能を試す技術デモ集です。ゲーム制作者の参考になるサンプルとして、ROM・ソース・検証記録を公開しています。試作・無保証で、実機動作や実機性能は未確認です。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
+MSX turbo R + V9968の描画機能を、楽しめる映像で紹介する自動再生の技術デモ集です。5本とも現行のモードレジスターとVRAM配置に対応し、原画・動き・音は維持しています。実機を目標にしていますが、実機での動作・性能は未確認です。試作・無保証で、継続的な修正・サポートを約束するものではありません。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
-## 新しいデモ：SUPER CAT / COASTAL FLIGHT
+## SUPER CAT / COASTAL FLIGHT
 
-短いマントを背中に付けた猫が、提灯と肉球飾りでお祭り中の巨大屋形船へ飛んできます。見た目はジョーク、描画は本気の全画面変形です。**全画面の回転・拡大縮小・前方スクロール**を同時に行い、旋回中も前進し続ける512KiB ASCII8技術デモです。上昇・降下に応じた地形の倍率、影の変化、半透明の雲を組み合わせています。
+全画面の回転・拡縮・前方スクロールで、短いマントの猫がお祭り中の屋形船を巡ります。仮想光源に合わせた影、半透明の雲、船上で踊る猫。見た目はジョーク、描画は本気の512KiBデモです。
 
-今回の更新では、仮想光源を地形の北西に固定し、旋回・高度に応じて猫の影を配置します。海岸を1.5倍に広げ、3隻の屋形船に計6匹の手を振る・踊る猫を追加しました。船上の猫は地形へ描き込んでから回転・拡縮するため、甲板と一緒に動きます。海岸の屋台も縞の布屋根・のれん・提灯のある姿へ描き直しました。設定と仕組みは技術解説に記載しています。
+![SUPER CAT — BlueMSX Plus](current/previews/SUPER_CAT-COASTAL_FLIGHT.png)
 
-![SUPER CAT / COASTAL FLIGHT — actual V9968 openMSX capture](demos/super-cat-coastal-flight/outputs/preview.gif)
-
-- **[詳しい説明・起動方法 / Instructions](demos/super-cat-coastal-flight/README.md)**
-- **[技術解説 / Technical explanation](demos/super-cat-coastal-flight/TECHNIQUES.md)**
-- **[36秒のMP4・無音 / Native video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT.mp4)**
-- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-source-and-ROM.zip)**
-- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](demos/super-cat-coastal-flight/outputs/SUPER_CAT-COASTAL_FLIGHT-V9968-legacy-openmsx-internal.rom)
-
-実行録画は約59.92fpsで、補間や速度変更はありません。内蔵V9968のlegacy-openMSX構成で全画面変形の約59.92更新／秒、ループ、前進方向、原画転送、再ビルド一致を確認しました。実機・現行FPGA・外付け構成は未検証です。試作・無保証であり、継続的な修正・サポートは約束していません。
-
-**SUPER CAT / COASTAL FLIGHT** is an original automatic V9968 full-screen transform demo with continuous forward flight, banking, altitude changes, translucent clouds and a short-caped cat. The updated demo adds a fixed world-space light, six waving/dancing cats on three boats, a 1.5-times larger coast and redesigned festival stalls. See the technical explanation for shadow projection and HMMM deck animation. The native MP4 retains approximately59.92 fps without interpolation. The internal legacy-openMSX profile was tested; physical hardware, current FPGA and external configurations are unverified. Supplied experimentally, without warranty or a commitment to support.
-
----
+[新版ROM](current/roms/SUPER_CAT-COASTAL_FLIGHT-V9968-current-internal.rom) · [BlueMSX Plus動画](current/previews/SUPER-CAT-blueMSX-100percent.mp4) · [技術解説](demos/super-cat-coastal-flight/TECHNIQUES.md)
 
 ## CATSTRIDER
 
-斜め後ろ姿の猫が、高速に流れる宇宙の床を滑走し、写真調の猫缶と銀桃色の鯛に出会います。112走査線のLRMM遠近描画、Sprite mode3の拡縮・半透明、光のリングと星の光跡を組み合わせた、**512 KiB ASCII8・約51.3秒の自動再生デモ**です。操作を伴うゲームではありません。
+猫、写真調の魚、架空の猫缶が宇宙を飛ぶ疑似3Dデモ。112走査線の遠近描画と、Sprite mode3の拡縮・半透明を組み合わせています。512KiB。ネコ素材はAI生成です。魚と猫缶の素材もAI生成です。
 
-ネコ素材はAI生成です。
+![CATSTRIDER — BlueMSX Plus](current/previews/CATSTRIDER.png)
 
-魚と猫缶の素材もAI生成です。
-
-![CATSTRIDER — actual V9968 openMSX capture](demos/catstrider/outputs/CATSTRIDER-emulator.gif)
-
-- **[詳しい説明・起動方法 / Instructions](demos/catstrider/README.md)**
-- **[全編MP4・PSG音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-smooth.mp4)**
-- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-V9968-source.zip)**
-- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/catstrider/outputs/CATSTRIDER-V9968-legacy-openmsx-internal.rom)
-- [実装メモ / Implementation notes](demos/catstrider/TECHNIQUES.md)
-
-内蔵・外付けの両openMSX構成で、54秒の実行と一周後の再開を検証しました。シーン更新は29.9614回／秒、MP4は59.92 fpsの実行録画を補間せず保持しています。GIFは30 fps、5秒地点から15秒の抜粋です。対象はV9968対応openMSX d884c4bで、実機・現行FPGAでの動作や性能は未確認です。
-
-**CATSTRIDER** combines a photographic-looking rear-facing cat, generic cat-food tins and silver-and-pink sea bream with a fast perspective floor, scaled and translucent Sprite3 artwork, portals and star streaks. This original 512 KiB ASCII8 sample plays automatically for about 51.3 seconds per loop; it is noninteractive. Both tested openMSX configurations measured 29.9614 scene updates per second. The MP4 retains native 59.92 fps recording and PSG sound without interpolation. Physical hardware and the current FPGA configuration remain unverified.
-
-The cat asset is AI-generated. The fish and cat-food tin assets are also AI-generated.
-
----
+[新版ROM](current/roms/CATSTRIDER-V9968-current-internal.rom) · [BlueMSX Plus動画](current/previews/CATSTRIDER-blueMSX-100percent.mp4) · [技術解説](demos/catstrider/TECHNIQUES.md)
 
 ## MIST / VALE
 
-朝焼けの山を背景に、木々と手前の岸辺が一緒に水平へ流れ、少し速い半透明の霧が漂います。水面だけを走査線割り込みで揺らす、512KiB ASCII8の風景デモです。木・草・石・水際は同じスクロール位置を使い、足元が地面に対して滑らないようにしています。
+朝焼けの山、木々と岸辺の同期スクロール、半透明の霧、水面だけを揺らすラスター。512KiB。
 
-![MIST / VALE — actual V9968 openMSX capture](demos/mist-vale/outputs/MIST_VALE-emulator.gif)
+![MIST / VALE — BlueMSX Plus](current/previews/MIST_VALE.png)
 
-- **[詳しい説明・起動方法 / Instructions](demos/mist-vale/README.md)**
-- **[滑らかなMP4・音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-smooth.mp4)**
-- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-source-and-ROM.zip)**
-- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/mist-vale/outputs/MIST_VALE-V9968-legacy-openmsx-internal.rom)
-- [実装メモ / Implementation notes](demos/mist-vale/TECHNIQUES.md)
-
-SCREEN8への背景合成、Sprite mode3の半透明、R19/R27による水面ラスタを組み合わせています。独立した背景ハードウェアレイヤーを複数使う方式ではありません。両エミュレーター構成で約59.93回／秒の更新を確認し、地面との同期、表示中ページへの書込み防止、霧の混色、ソースからの再ビルド一致も検証しました。GIFは30fps、MP4は約59.92fpsの実行録画です。実機動作・実機性能は未確認です。
-
-**MIST / VALE** combines a stationary dawn landscape, trees and shoreline moving together, faster translucent fog, and raster-driven water ripples. This original 512 KiB ASCII8 sample uses SCREEN8 compositing, Sprite3 blending and line interrupts. Both emulator profiles were checked at about59.93 updates per second, including ground/tree synchronization and safe page presentation. The GIF and MP4 show actual ROM execution. Hardware operation/performance is unverified; the sample is provided without warranty or a commitment to support.
-
----
+[新版ROM](current/roms/MIST_VALE-V9968-current-internal.rom) · [技術解説](demos/mist-vale/TECHNIQUES.md)
 
 ## LUMEN / FORGE
 
-固定された光の展示室で、半透明の結晶と金色の光輪が別々の方向へ回転し、拡大・縮小します。FG4付きLRMMで2つの原画を実時間変形し、Sprite mode3で拡縮と半透明を組み合わせています。512KiB ASCII8 ROMです。
+回転する結晶と光の輪。拡縮と半透明の重ね合わせを使った512KiBデモです。
 
-![LUMEN / FORGE — actual V9968 openMSX capture](demos/lumen-forge/outputs/LUMEN_FORGE-emulator.gif)
+![LUMEN / FORGE — BlueMSX Plus](current/previews/LUMEN_FORGE.png)
 
-- **[詳しい説明・起動方法 / Instructions](demos/lumen-forge/README.md)**
-- **[滑らかなMP4・音声付き / Video](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-smooth.mp4)**
-- **[ROM・ソース一式 / Download ZIP](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-source-and-ROM.zip)**
-- [内蔵V9968エミュレーター用ROM / Internal V9968 ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/demos/lumen-forge/outputs/LUMEN_FORGE-V9968-legacy-openmsx-internal.rom)
-- [実装メモ / Implementation notes](demos/lumen-forge/TECHNIQUES.md)
+[新版ROM](current/roms/LUMEN_FORGE-V9968-current-internal.rom) · [技術解説](demos/lumen-forge/TECHNIQUES.md)
 
-GIFは実行録画から作成した30fpsのプレビューです。MP4は約59.92fpsの記録を保持し、フレーム補間や速度変更はありません。両エミュレーター構成で約59.93回／秒の更新を確認しました。実機の測定値ではありません。
+## PRISM FLIGHT
 
-**LUMEN / FORGE** combines two live FG4 LRMM rotations, independent Sprite3 scaling and transparency over a stationary SCREEN8 scene. It is a 512 KiB ASCII8 technical sample for creators. The 30 fps GIF comes from actual ROM execution; the linked MP4 retains native emulator cadence and PSG audio. Hardware operation/performance remains unverified. See the linked Japanese/English instructions and terms.
+回転・拡縮する背景と結晶を組み合わせた128KiBの導入デモです。
 
----
+![PRISM FLIGHT — BlueMSX Plus](current/previews/PRISM_FLIGHT.png)
 
-## PRISM FLIGHT — V9968 warmup demo
+[新版ROM](current/roms/PRISM_FLIGHT-V9968-current-internal.rom)
 
-**MSX turbo R + V9968 / 128 KiB ASCII8 ROM / Kanon × ASTRA (Codex)**
+## 版と実行環境 / Versions
 
-青紫の光る空間が画面全体で回転・ズームし、6個の多色結晶が奥行きを変えながら周回する、小さなV9968デモです。原画・動き・PSGの短いフレーズは本デモ用に生成しました。
+| 版 | 実行環境 | 案内 |
+|---|---|---|
+| v2.0.0 新仕様 / Current specification | V9968対応BlueMSX Plus | [新版](current/README.md) |
+| 旧版 / Previous version | V9968対応openMSXの互換モード | [旧版](UPDATE-20260922.md) |
 
-![PRISM FLIGHT — actual V9968 openMSX capture](outputs/PRISM_FLIGHT-emulator.gif)
+V9968対応BlueMSX Plusの検証ビルドは、experimental/v9968ブランチの指定コミットです。通常配布版との区別を含め、[起動方法](current/README.md)を確認してください。BIOSとエミュレータ本体は同梱していません。
 
-*実際のROM実行を撮影した12秒・12fpsの無音GIF。Actual ROM execution in V9968-enabled openMSX; 12-second silent preview at 12 fps.*
-
-- [ROM・ソース一式をダウンロード](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/outputs/PRISM_FLIGHT-source-and-ROM.zip)
-- [内蔵V9968エミュレーター用ROM](https://github.com/kanon-ai/V9968_SampleDemo/raw/refs/heads/main/outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom)
-- [English instructions](#english)
-
-これは機能確認用の試作です。実機動作・実機速度は未確認で、無保証です。性能限界を測定したベンチマークではありません。詳細は[免責事項](DISCLAIMER.md)と[利用条件](COPYRIGHT.md)を参照してください。
-
-## 最初に動かす場合
-
-1. [buppu3氏の配布ページ](https://buppu3.github.io/)からV9968対応openMSXを用意します。今回の検証対象はWindows版 `openmsx-21.0-v9968-d884c4b-x64-VC-Release.zip` です。通常のV9968未対応openMSXでは動きません。
-2. [Panasonic_FS-A1ST_V9968.xml](https://buppu3.github.io/openMSX/share/machines/Panasonic_FS-A1ST_V9968.xml)を、そのopenMSXの `share/machines/` に保存します。
-3. FS-A1STのBIOSなど、マシン定義が要求するシステムROMは利用条件に従って各自で用意してください。本リポジトリには含まれていません。
-4. マシン `Panasonic_FS-A1ST_V9968` を選び、次のROMをカートリッジとして読み込みます。
-
-**`outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom` — ASCII8、128KiB**
-
-`run-demo.cmd` を実行するか、このROMをopenMSXのカートリッジに読み込み、ASCII8を指定してください。起動とVRAM転送に約6秒かかり、その後は自動ループします。終了はopenMSXのウィンドウを閉じます。
-
-Windows用ランチャーは既定で `C:/Program Files/openMSX/openmsx.exe` を参照します。別の場所にある場合は `OPENMSX_EXE` 環境変数に実行ファイルのフルパスを指定してください。マシン定義は事前に上記の手順で導入します。起動時にデモ専用の `work/emulator/` を作成します。
-
-外付け構成を使う場合は、[HRA_V9968.xml](https://buppu3.github.io/openMSX/share/extensions/HRA_V9968.xml)を `share/extensions/` に保存し、`Panasonic_FS-A1ST` + `HRA_V9968` 拡張を選びます。ROMは下表の `legacy-openmsx.rom`、映像出力は `V9968` を選択してください。
-
-## ROMの使い分け
-
-| ファイル末尾 | 対象 | I/O | レジスター仕様 | 検証 |
-|---|---|---|---|---|
-| `legacy-openmsx-internal.rom` | `Panasonic_FS-A1ST_V9968` | 98h–9Ch | 旧R20 ECOM/EVR | 今回の実行・撮影対象 |
-| `legacy-openmsx.rom` | `Panasonic_FS-A1ST` + `HRA_V9968`拡張 | 88h–8Ch | 旧R20 ECOM/EVR | エミュレーター実行確認 |
-| `current.rom` | 現行FPGA仕様の外付けV9968 | 88h–8Ch | R21=3Ah、R20=1Fh | ビルドのみ、実機未確認 |
-
-3つともASCII8の128KiB ROMです。旧エミュレーターと現行FPGAの初期化を混同しないため分けています。この検証版エミュレーターでは、マシンXMLのVRAM値にかかわらずV9968選択時に256KiBを確保します。
-
-## サンプルと検証
-
-- `outputs/PRISM_FLIGHT-emulator.gif`：実際のROM実行を撮影した12秒のGIF。12fpsに間引いた無音プレビューです。
-- `outputs/PRISM_FLIGHT-emulator.png`：同じ実行からの静止画。
-- `outputs/verification.json`：ROM・エミュレーターのSHA-256、構成、実測更新回数、検証範囲。
-
-2つの旧仕様用ROMをそれぞれ約42秒のエミュレーター時間で実行し、ループ境界の通過、R800 DRAM動作、描画ページ切替、原画64KiBのVRAMへの完全一致、6スプライト後の終端を確認済みです。エミュレーター上では約59.91回/秒の描画更新でした。GIF撮影は等速・フレームスキップなしで実行し、12fpsで採取しています。エミュレーター上の更新速度から実機速度を保証することはできません。現行FPGA仕様のROMには、対応エミュレーターまたは実機での追加検証が必要です。
-
-## 使った機能
-
-- SCREEN5、256×212。RGB各5bitの拡張パレット。
-- LRMMによる背景全体の回転・拡大縮小。
-- Sprite mode3の多色表示・パレット群・サイズ変更。結晶は1個ずつ16×32の原画です。
-- 表示ページとスプライト属性テーブルを二重化。
-- R800側は座標テーブルの読出しとコマンド発行を担当し、画素変換をVDPへ渡します。
-
-ROMに動画の完成画面を大量格納する方式ではありません。原画32KiB、スプライト原画32KiB、512フレーム分の座標・属性32KiBを持ち、VDPが毎回画像を作ります。1周は512回の描画更新です。背景パレットも更新し、PSGの1声を鳴らします。操作やゲーム要素はありません。
-
-## 再ビルド・変更箇所
-
-Python 3、Pillow、[Pasmo](https://pasmo.speccy.org/)を使用します。検証環境はPython 3.13 / Pillow 12.2.0です。`PASMO`環境変数で実行ファイルを指定できます。未指定時はPATHまたは `C:/Software/Pasmo/pasmo.exe` を使用します。
-
-```powershell
-python -m pip install -r requirements.txt
-$env:PASMO = 'C:/path/to/pasmo.exe'
-python tools/build.py
-# Windows: the V9968 emulator, both XML files and your BIOS must be installed first.
-python tools/verify.py
-```
-
-検証には上記のユーザー所有openMSX環境が必要です。通常ビルドはエミュレーターやBIOSを要求しません。
-
-- `tools/generate.py` の `background()`：背景の形。
-- 同 `sprites()`、`palette()`：結晶・色。
-- 同 `frame_records()`：回転、ズーム、軌道、遠近の変化。
-- `src/demo.asm`：V9968初期化、LRMM発行、表示切替。
-- `src/boot.asm`：ASCII8の起動とR800への切替。
-
-`assets/*-art.png` は生成原画の確認用で、エミュレーター画面ではありません。撮影結果は `outputs/*-emulator.*` です。`work/` は実行時に作られる作業用ディレクトリーで、GitHubには含めません。ランチャー設定は `tools/preview.tcl` にあります。
-
-## 参照資料
-
-- [buppu3氏のV9968対応openMSX配布ページ](https://buppu3.github.io/)
-- [検証バイナリーに対応するopenMSX source d884c4b](https://github.com/buppu3/openMSX/tree/d884c4b29d7e736d6e488aca5f28e124a410c19f)
-- [HRA!氏のV9968 FPGA資料・実装](https://github.com/hra1129/V9968_Cartridge/tree/ceeecd7e3c2d25c20045f797617af0f70ca228c1)
-
-現行版では設計者の補足に合わせて、ポート4で拡張レジスターアクセスを許可し、R21は固定ビットを含む3Ahを指定します。Sprite mode2の新しいパレット群指定には依存していません。
-
-## English
-
-An original 128 KiB ASCII8 warmup demo for MSX turbo R + V9968: full-screen LRMM rotation/zoom, six scaled multicolor mode-3 sprites, RGB5 palette animation and a small PSG phrase. The ROM contains original indexed artwork and motion parameters; the VDP renders the transformed images at runtime. It is not a prerecorded frame sequence.
-
-1. Obtain the V9968-enabled Windows openMSX from [buppu3's page](https://buppu3.github.io/). The tested binary is `openmsx-21.0-v9968-d884c4b-x64-VC-Release.zip`.
-2. Download [Panasonic_FS-A1ST_V9968.xml](https://buppu3.github.io/openMSX/share/machines/Panasonic_FS-A1ST_V9968.xml) into its `share/machines/` directory and provide your own legally usable FS-A1ST system ROMs.
-3. Select that machine and load **`outputs/PRISM_FLIGHT-V9968-legacy-openmsx-internal.rom`** with mapper **ASCII8**. Allow about six seconds for boot and initial VRAM upload; the demo loops automatically.
-4. On Windows, `run-demo.cmd` starts this configuration. Set `OPENMSX_EXE` if your executable is not under `C:/Program Files/openMSX/`.
-
-For the external cartridge configuration, install [HRA_V9968.xml](https://buppu3.github.io/openMSX/share/extensions/HRA_V9968.xml) into `share/extensions/`, select `Panasonic_FS-A1ST` + `HRA_V9968`, load **legacy-openmsx.rom**, and select the **V9968** video source.
-
-Both legacy profiles were tested for 42 emulated seconds, including loop wrap, page flipping and byte-exact asset upload. About 59.91 demo updates/second were observed in this emulator. The current FPGA build uses a different register map and has not been run on hardware. The GIF is a 12 fps sample of actual emulator output; it is not evidence of hardware frame rate.
-
-Build with Python 3, Pillow and Pasmo: `python -m pip install -r requirements.txt`, then `python tools/build.py`. Set `PASMO` to your assembler executable if needed. Source and ROM hashes are included in `outputs/`; `python tools/verify.py` requires the Windows emulator environment described above.
-
-This is an experimental demo, provided **AS IS, without warranty or a commitment to fixes/support**. See [DISCLAIMER.md](DISCLAIMER.md), [COPYRIGHT.md](COPYRIGHT.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). BIOS, emulator binaries and third-party machine XMLs are not bundled.
+The five demos preserve their original artwork, motion and sound while adopting the current V9968 configuration. They are noninteractive technical samples, not completed games. Hardware operation and performance remain unverified; supplied experimentally and without warranty. See the current-version guide for the exact V9968-capable BlueMSX Plus build and test scope.

@@ -1,6 +1,6 @@
 # SUPER CAT / COASTAL FLIGHT
 
-**現在の動作状況（2026-09-22）:** 従来ROMをopenMSX 194a769の `V9968_OLD` 互換モードで動作確認済みです。[設定方法](../../UPDATE-20260922.md)を参照してください。新モードでは表示不良があり、実機は未検証です。追加対応は一旦保留します。 / Verified in compatibility mode only; further adaptation is on hold.
+> **v2.0.0：新仕様V9968対応版は[こちら](../../current/README.md)。2026年9月23日時点ではV9968対応BlueMSX Plusでのみ確認しています。以下は旧版の説明です。旧版はopenMSX互換モードで動作可能です。 / Current version: v2.0.0, verified with V9968-capable BlueMSX Plus. Legacy material follows.**
 
 マント猫が海岸と巨大屋形船の上を飛ぶ、**MSX turbo R＋V9968の全画面回転・拡大縮小・前方スクロールデモ**です。なぜか巨大屋形船は、提灯と肉球飾りで猫のお祭り中。空飛ぶ猫がお祭り見物に来た、というジョーク仕立てです。低空で駆け抜け、上昇して広く見渡し、旋回しながら前進を続けます。自動再生の技術サンプルで、操作するゲームではありません。
 

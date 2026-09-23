@@ -1,0 +1,32 @@
+[
+  {
+    "name": "PRISM_FLIGHT",
+    "file": "roms/PRISM_FLIGHT-V9968-current-internal.rom",
+    "sha256": "106ca784639765e2555de4e1d927ff3077b7bf213b95b27875d1bd558f1251dc",
+    "bytes": 131072
+  },
+  {
+    "name": "SUPER_CAT-COASTAL_FLIGHT",
+    "file": "roms/SUPER_CAT-COASTAL_FLIGHT-V9968-current-internal.rom",
+    "sha256": "c0ad7363537b156a25f15c08b0fac64fec9353eada419f5306844a03f3406348",
+    "bytes": 524288
+  },
+  {
+    "name": "LUMEN_FORGE",
+    "file": "roms/LUMEN_FORGE-V9968-current-internal.rom",
+    "sha256": "7ecf334ce5beb185f049dacf6cb3b3f96f5146eff0dd1c75797243c3ce786015",
+    "bytes": 524288
+  },
+  {
+    "name": "MIST_VALE",
+    "file": "roms/MIST_VALE-V9968-current-internal.rom",
+    "sha256": "4a9d8cf4261784798d910c456a844cd9a95a068a3c36bf201a33c8392726fd0a",
+    "bytes": 524288
+  },
+  {
+    "name": "CATSTRIDER",
+    "file": "roms/CATSTRIDER-V9968-current-internal.rom",
+    "sha256": "c6a1c58e4264703aa71f2d5554b44e841464773f757ef3e62dd57d3b196fd8f7",
+    "bytes": 524288
+  }
+]

@@ -18,7 +18,7 @@ MSX turbo R + V9968の描画機能を、楽しめる映像で紹介する自動�
 
 A noninteractive technical demo for experimenting with V9968 LRMM. Original course and characters; 512KiB ASCII8. Verified with both current-specification emulators, not yet on physical hardware. This is an additional sample; the five v2.0.0 ROMs remain unchanged.
 
-![CAPE CIRCUIT](demos/cape-circuit/outputs/blueMSX-screenshot.png)
+![CAPE CIRCUIT — LRMM demo](demos/cape-circuit/outputs/CAPE-CIRCUIT-preview.gif)
 
 [ROM](demos/cape-circuit/outputs/CAPE-CIRCUIT-V9968.rom) · [動画 / Video](demos/cape-circuit/outputs/CAPE-CIRCUIT-preview.mp4) · [使い方・技術解説・検証 / Documentation](demos/cape-circuit/README.md)
 

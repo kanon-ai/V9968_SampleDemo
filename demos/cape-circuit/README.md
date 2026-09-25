@@ -43,6 +43,6 @@ CAPE CIRCUIT is a noninteractive technical demo for experimenting with V9968 LRM
 
 [利用条件](COPYRIGHT.md)・[免責事項](DISCLAIMER.md)・[第三者情報](THIRD_PARTY_NOTICES.md)。
 
-![CAPE CIRCUIT](outputs/blueMSX-screenshot.png)
+![CAPE CIRCUIT — LRMM demo](outputs/CAPE-CIRCUIT-preview.gif)
 
 [ROM](outputs/CAPE-CIRCUIT-V9968.rom) · [実行動画 / Video](outputs/CAPE-CIRCUIT-preview.mp4)

@@ -1,0 +1,15 @@
+{
+  "emulator": "BlueMSX Plus experimental V9968",
+  "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32",
+  "rom_sha256": "42bc45345c451d52009d7821d837e0f645c70b8d153a6076febf62ddd8ee3161",
+  "vram_bytes": 262144,
+  "r20": 31,
+  "r21": 58,
+  "all_source_vram_exact": true,
+  "active_sat_matches_frames": [
+    69,
+    229
+  ],
+  "visual_inspection": true,
+  "hardware_tested": false
+}

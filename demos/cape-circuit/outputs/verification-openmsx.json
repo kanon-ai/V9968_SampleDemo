@@ -1,0 +1,12 @@
+{
+  "emulator": "openMSX installed current V9968",
+  "emulator_sha256": "0528593dc9c71f40dcca00193c1b3ea8d745b833c3c7c0fd38cebc651ef1a62d",
+  "rom_sha256": "42bc45345c451d52009d7821d837e0f645c70b8d153a6076febf62ddd8ee3161",
+  "frames_checked": 1043,
+  "sequential": true,
+  "loop": true,
+  "alternating_pages": true,
+  "command_complete_before_flip": true,
+  "updates_per_emulated_second": 29.96137519191882,
+  "hardware_tested": false
+}

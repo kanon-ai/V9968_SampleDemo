@@ -12,6 +12,16 @@
 
 MSX turbo R + V9968の描画機能を、楽しめる映像で紹介する自動再生の技術デモ集です。5本とも現行のモードレジスターとVRAM配置に対応し、原画・動き・音は維持しています。実機を目標にしていますが、実機での動作・性能は未確認です。試作・無保証で、継続的な修正・サポートを約束するものではありません。[免責事項](DISCLAIMER.md)・[利用条件](COPYRIGHT.md)を参照してください。
 
+## CAPE CIRCUIT — LRMM experiment / 2026-09-25
+
+**V9968のLRMMを試すための、操作不要の技術デモです。** スーパーキャットとスーパーウサギがオリジナルのネオンコースを競走します。120走査線の遠近投影、Sprite mode3の拡縮、旋回に合わせた傾き、半透明の航跡。512KiB ASCII8。openMSXとBlueMSX Plusの新仕様モードで検証済み、実機は未確認です。
+
+A noninteractive technical demo for experimenting with V9968 LRMM. Original course and characters; 512KiB ASCII8. Verified with both current-specification emulators, not yet on physical hardware. This is an additional sample; the five v2.0.0 ROMs remain unchanged.
+
+![CAPE CIRCUIT](demos/cape-circuit/outputs/blueMSX-screenshot.png)
+
+[ROM](demos/cape-circuit/outputs/CAPE-CIRCUIT-V9968.rom) · [動画 / Video](demos/cape-circuit/outputs/CAPE-CIRCUIT-preview.mp4) · [使い方・技術解説・検証 / Documentation](demos/cape-circuit/README.md)
+
 ## SUPER CAT / COASTAL FLIGHT
 
 全画面の回転・拡縮・前方スクロールで、短いマントの猫がお祭り中の屋形船を巡ります。仮想光源に合わせた影、半透明の雲、船上で踊る猫。見た目はジョーク、描画は本気の512KiBデモです。

@@ -58,3 +58,9 @@ CAPE CIRCUIT is a noninteractive technical demo for experimenting with V9968 LRM
 ![CAPE CIRCUIT — LRMM demo](outputs/CAPE-CIRCUIT-preview.gif)
 
 [ROM](outputs/CAPE-CIRCUIT-V9968.rom) · [実行動画 / Video](outputs/CAPE-CIRCUIT-preview.mp4)
+
+## 新旧比較 / Before and after
+
+[新旧比較動画](outputs/CAPE-CIRCUIT-before-after.mp4)：左は2026-09-25初回公開版、右は2026-09-27最新版。両方のopenMSX実行録画を同じ経過時間で等速再生しています。更新頻度・カメラ演出が異なるため、同じコース位置を常に同期させた比較ではありません。音声は新版のみです。表示値はエミュレータ時間での平均描画更新頻度で、動画のフレームレートや実機性能ではありません。
+
+Left: original September 25 version. Right: September 27 update. Both emulator captures play at their recorded speed, without retiming or interpolation. Course positions gradually differ. Audio is from the new version only; labels show average rendering updates per emulated second, not physical-hardware performance.

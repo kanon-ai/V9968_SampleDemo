@@ -1,4 +1,5 @@
 ; CAPE CIRCUIT: R800 + current V9968. Native projective LRMM floor.
+include "assets/options.inc"
 VDP_BASE equ 098h
 FRAME equ 0E000h
  org 08000h
@@ -81,6 +82,54 @@ main_loop:
  ld a,92
  ld (line_y),a
 line_loop:
+ IF CENTER_SPLIT
+ ; Both halves share the same integer source origin at screen x=128.
+ ; Drawing outward limits vector-rounding drift and avoids a phase jump at x=128.
+ push hl
+ ld de,split_command
+ ld bc,4
+ ldir
+ ld de,right_vector
+ ld bc,4
+ ldir
+ ld hl,(right_vector)
+ ld a,l
+ cpl
+ ld l,a
+ ld a,h
+ cpl
+ ld h,a
+ inc hl
+ ld (left_vector),hl
+ ld hl,(right_vector+2)
+ ld a,l
+ cpl
+ ld l,a
+ ld a,h
+ cpl
+ ld h,a
+ inc hl
+ ld (left_vector+2),hl
+ ld a,(line_y)
+ ld (split_command+6),a
+ ld a,(draw_page)
+ ld (split_command+7),a
+ ld a,129
+ ld (split_command+8),a
+ ld a,4
+ ld (split_command+13),a
+ ld hl,left_vector
+ call draw_half
+ ld a,128
+ ld (split_command+8),a
+ xor a
+ ld (split_command+13),a
+ ld hl,right_vector
+ call draw_half
+ pop hl
+ ld de,8
+ add hl,de
+ ELSE
  call wait_command
  push hl
  ld de,4
@@ -118,6 +167,7 @@ line_loop:
  out (VDP_BASE+3),a
  ld a,030h
  out (VDP_BASE+3),a
+ ENDIF
  ld a,(line_y)
  inc a
  ld (line_y),a
@@ -131,7 +181,7 @@ line_loop:
  ld a,4
  call vram_write_address
  ld hl,FRAME+960
- ld bc,56*256+VDP_BASE
+ ld bc,64*256+VDP_BASE
  otir
  call fresh_vblank
  ld a,(draw_page)
@@ -168,10 +218,26 @@ presented:
 store_frame:
  ld (frame_index),hl
  jp main_loop
+ IF CENTER_SPLIT
+draw_half:
+ call wait_command
+ ld a,47
+ ld e,17
+ call reg_write
+ ld bc,4*256+VDP_BASE+3
+ otir
+ ld hl,split_command
+ jp copy_sky
+split_command:
+ dw 0,0,128,0,129,1
+ db 0,4,030h
+left_vector: dw 0,0
+right_vector: dw 0,0
+ ENDIF
 render_sky:
  ; Two bounded HMMM strips implement a panoramic wrap, preserving the HUD.
  call wait_command
- ld a,(FRAME+1016)
+ ld a,(FRAME+1023)
  ld (sky_command),a
  ld b,a
  neg
@@ -187,7 +253,7 @@ sky_width_ready:
  ld (sky_command+4),a
  ld hl,sky_command
  call copy_sky
- ld a,(FRAME+1016)
+ ld a,(FRAME+1023)
  or a
  ret z
  ld (sky_command+8),a

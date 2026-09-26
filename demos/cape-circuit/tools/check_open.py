@@ -17,13 +17,14 @@ debug set_bp PRESENT {} {present}
 s=s.replace('FRAME',str(sym['frame_index'])).replace('NEXT',str(sym['frame_index']+1)).replace('PRESENT',str(sym['presented']))
 for t in [5,10,15,20,25,30,40]:s+=f'after time {t} {{openmsx::internal_screenshot -raw shot-{t}.png}}\n'
 s+='after time 7 {record start ./race.avi}\nafter time 34 {record stop}\n'
-s+='after time 41 {close $::f;exit}\nafter realtime 140 {exit}\n'
+s+='after time 45 {close $::f;exit}\nafter realtime 140 {exit}\n'
 (w/'check.tcl').write_text(s);env=os.environ.copy();env.update(OPENMSX_HOME=str(w/'home'),OPENMSX_SYSTEM_DATA='C:/Program Files/openMSX/share')
 p=subprocess.run(['C:/Program Files/openMSX/openmsx.exe','-machine','Panasonic_FS-A1ST_V9968','-cart',str(R/'outputs/CAPE-CIRCUIT-V9968.rom'),'-romtype','ASCII8','-script','check.tcl'],cwd=w,env=env,capture_output=True,timeout=150,creationflags=subprocess.CREATE_NO_WINDOW)
 print(p.returncode,p.stderr.decode(errors='replace'))
 rows=list(csv.DictReader((w/'frames.csv').open()));print('frames',len(rows),'fps',(len(rows)-1)/(float(rows[-1]['time'])-float(rows[0]['time'])))
 
 assert len(rows)>1000
+assert (len(rows)-1)/(float(rows[-1]["time"])-float(rows[0]["time"]))>=28
 assert all((int(b['frame'])-int(a['frame']))%320==1 for a,b in zip(rows,rows[1:]))
 assert all(a['page']!=b['page'] for a,b in zip(rows,rows[1:]))
 assert all(int(a['status'])&1==0 for a in rows)

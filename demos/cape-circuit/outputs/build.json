@@ -2,7 +2,7 @@
   "name": "CAPE CIRCUIT",
   "rom": "CAPE-CIRCUIT-V9968.rom",
   "bytes": 524288,
-  "sha256": "42bc45345c451d52009d7821d837e0f645c70b8d153a6076febf62ddd8ee3161",
+  "sha256": "aad43415e0e8f6fe28a0d5977b7dd631f410ea489384c1a444fabf11b29772d0",
   "frames": 320,
   "rendering": "120 LRMM scanlines per frame, no prerecorded video",
   "vdp": "V9968",

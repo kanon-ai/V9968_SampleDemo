@@ -1,0 +1,6 @@
+{
+  "comparison": "identical baseline camera, texture coordinates at screen x128; not a visual or hardware accuracy metric",
+  "old_rms_source_texels": 0.32276348718100006,
+  "compensated_rms_source_texels": 0.14440013550073355,
+  "samples": 76800
+}

@@ -1,0 +1,58 @@
+{
+  "scope": "Boot, ongoing animation and saved CPU/VDP state; not a frame-exact before/after performance benchmark.",
+  "hardware_tested": false,
+  "results": [
+    {
+      "name": "CATSTRIDER",
+      "cpu": "Z80",
+      "rom_sha256": "7ec61d0044174cff87e48641e9f115066877c267e7acd0640c19da76bf98f804",
+      "frame_index": 929,
+      "cpu_status": 96,
+      "cpu_mode": 0,
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "visual_checked": true,
+      "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32"
+    },
+    {
+      "name": "CATSTRIDER",
+      "cpu": "R800",
+      "rom_sha256": "2c2c8e2b0aa9fe46bab5eaefb104f7b46c545c4d81333f3675e884a43d9561c7",
+      "frame_index": 780,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "visual_checked": true,
+      "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32"
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "cpu": "Z80",
+      "rom_sha256": "6e5640279e17ce5776aa7647c8ea2d21f21140c8b63108b4091d0c735695f1a6",
+      "frame_index": 309,
+      "cpu_status": 96,
+      "cpu_mode": 0,
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "visual_checked": true,
+      "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32"
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "cpu": "R800",
+      "rom_sha256": "26b4e3682098e30e329f9d3347fd835946c790de20defbdf226fd3e597069182",
+      "frame_index": 50,
+      "cpu_status": 0,
+      "cpu_mode": 1,
+      "vram_bytes": 262144,
+      "r20": 31,
+      "r21": 58,
+      "visual_checked": true,
+      "emulator_sha256": "0066629d0fbfd2902cf3cda8ba20fe5c45b7de1639fa088bf4bc0ff841192c32"
+    }
+  ]
+}

@@ -1,5 +1,14 @@
 # V9968 Sample Demos — v2.0.0
 
+## Z80最適化版 / Z80 optimization — 2026-10-05
+
+**CATSTRIDERとCAPE CIRCUITのZ80最適化版を追加しました。** 検証したZ80モードでは両方とも約20→30更新/秒。原画・描画内容を維持し、R800でも確認しました。V9968は引き続き必要です。
+
+[最適化版ROM・使い方・測定結果](z80/README.md) · [まとめてダウンロード](https://github.com/kanon-ai/V9968_SampleDemo/releases/tag/z80-update-20261005)
+
+CPU-optimized editions of CATSTRIDER and CAPE CIRCUIT improve from about 20 to 30 updates/s in the tested Z80 configuration. V9968 is still required. See the linked guide for emulator coverage and hardware limitations. Earlier releases remain available below.
+
+
 **新仕様V9968対応版を公開しました。2026年9月23日、公開済みv2.0.0の全5本をV9968対応BlueMSX PlusとopenMSX V9968 c620b69の双方で動作確認しました。新版はどちらでも実行できます。openMSXでは新仕様の `V9968` を使用し、互換モードは使用しません。**
 
 旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](UPDATE-20260922.md)は引き続き参照できます。

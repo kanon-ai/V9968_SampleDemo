@@ -1,0 +1,34 @@
+[
+  {
+    "name": "CATSTRIDER",
+    "cpu": "auto",
+    "file": "roms/CATSTRIDER-auto.rom",
+    "bytes": 524288,
+    "sha256": "2c2c8e2b0aa9fe46bab5eaefb104f7b46c545c4d81333f3675e884a43d9561c7",
+    "frames": 1536
+  },
+  {
+    "name": "CATSTRIDER",
+    "cpu": "Z80",
+    "file": "roms/CATSTRIDER-Z80.rom",
+    "bytes": 524288,
+    "sha256": "7ec61d0044174cff87e48641e9f115066877c267e7acd0640c19da76bf98f804",
+    "frames": 1536
+  },
+  {
+    "name": "CAPE_CIRCUIT",
+    "cpu": "auto",
+    "file": "roms/CAPE_CIRCUIT-auto.rom",
+    "bytes": 524288,
+    "sha256": "26b4e3682098e30e329f9d3347fd835946c790de20defbdf226fd3e597069182",
+    "frames": 320
+  },
+  {
+    "name": "CAPE_CIRCUIT",
+    "cpu": "Z80",
+    "file": "roms/CAPE_CIRCUIT-Z80.rom",
+    "bytes": 524288,
+    "sha256": "6e5640279e17ce5776aa7647c8ea2d21f21140c8b63108b4091d0c735695f1a6",
+    "frames": 320
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "PRISM_FLIGHT",
+    "updates_per_second": 59.92275920157859,
+    "scope": "Short 128-frame baseline sample; ROM unchanged"
+  },
+  {
+    "name": "SUPER_CAT-COASTAL_FLIGHT",
+    "updates_per_second": 59.92278289749364,
+    "scope": "Short 128-frame baseline sample; ROM unchanged"
+  },
+  {
+    "name": "MIST_VALE",
+    "updates_per_second": 59.892254411992944,
+    "scope": "Short 128-frame baseline sample; ROM unchanged"
+  },
+  {
+    "name": "LUMEN_FORGE",
+    "updates_per_second": 59.92279869478079,
+    "scope": "Short 128-frame baseline sample; ROM unchanged"
+  }
+]

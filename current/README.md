@@ -1,5 +1,7 @@
 # V9968 Sample Demos v2.0.0 — 新仕様対応版
 
+2026-10-05: CATSTRIDERの[Z80最適化版](../z80/README.md)を追加しました。このフォルダーのv2.0.0 ROMは再現用に維持しています。 / A CPU-optimized CATSTRIDER edition is now available; the v2.0.0 files here are preserved.
+
 **2026年9月23日、公開済みv2.0.0の全5本をV9968対応BlueMSX PlusとopenMSX V9968 c620b69の双方で動作確認しました。新版はどちらでも実行できます。openMSXでは新仕様の `V9968` を使用し、互換モードは使用しません。** 旧バージョンはopenMSXの互換モードで動作可能です。[旧版の起動方法](https://github.com/kanon-ai/V9968_SampleDemo/blob/main/UPDATE-20260922.md)を参照してください。
 
 実機を目標に現行V9968仕様へ対応した試作技術デモです。実機での動作・性能は未確認です。無保証で、継続的な修正やサポートを約束するものではありません。[免責事項](../DISCLAIMER.md)・[利用条件](../COPYRIGHT.md)を参照してください。

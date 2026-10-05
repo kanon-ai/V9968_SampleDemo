@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-05",
+  "machine": "Panasonic_FS-A1ST_V9968",
+  "emulator_sha256": "0528593dc9c71f40dcca00193c1b3ea8d745b833c3c7c0fd38cebc651ef1a62d",
+  "hardware_tested": false,
+  "results": [
+    {
+      "name": "CATSTRIDER",
+      "version": "before",
+      "cpu": "Z80",
+      "rom_sha256": "1384c7d848b42686bde5627531d227fcf55cee9ee67331b940cf181f55151da9",
+      "updates_per_emulated_second": 19.974252739012154,
+      "frames_checked": 1536,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        96
+      ],
+      "samples": {
+        "vram-1024.bin": "86e630655c2247461e4acd6c7aaebf56cc7fe4030ce590f0d711af3e32df85b8",
+        "vram-1088.bin": "4944dc29af460487bb66ee8a3aee07123c549ec66735dd35f94bce10c82a8857",
+        "vram-1152.bin": "7c9f5937cf8455067d69e4a886174ec115ed597cea7d121e31235a4a5b5df662",
+        "vram-1216.bin": "a2086499cfab5389ebf4db5e6d0e4bd975751718a2686582c3d3180db63b1032",
+        "vram-128.bin": "d485e83fec17136816946ef29c1a7ee97a8b4b2cc4b4ae8e641a0d9187e27575",
+        "vram-1280.bin": "75c05e0eeeef7928dedad8ccc04ec6230483957c5f8eed1457ae680853c935d4",
+        "vram-1344.bin": "a7a578130d03db6ce86f9eccd1f1fd269f9ef1d455c2df6279031e0abb85cfd2",
+        "vram-1408.bin": "83edca7e159b2859c7fd49a0383bc7df8f7ff1038b0e83d98949db1293085af0",
+        "vram-1472.bin": "b5e7772fffd0ad84cd6cf7016e2dcbe6ad0733675fbb4bab7c1b67d82708a1fe",
+        "vram-192.bin": "05f67ed27679aff26d00a4fcb617fa3a4bb568f880121946eb0f544a2d759b9a",
+        "vram-256.bin": "30970e381b95c69834115904574fb004790bf5d6b6da086ef66f1790dcb9e3ba",
+        "vram-320.bin": "edd81eafaecae05c9c2a954018ac7e17c4fc5972307e7a8e7dd7197beb9a07a7",
+        "vram-384.bin": "78d5bbb391cb55e596a7800800a61b73e7289f086e84722a72445aee55776732",
+        "vram-448.bin": "38dc5b2774c745a589375f62e52ac125829335b94ac35dbb9ecf6de9032295a2",
+        "vram-512.bin": "f55280178c941685ac50036189ef25f23fc98e4670ffe469d62a0e490fdda871",
+        "vram-576.bin": "b7346e04d7308c7219cd077b67993c706f74ed2d5386faa6403cf132d40f4975",
+        "vram-64.bin": "a9ea459c6c3f799e5fb3aaad8a7af5c057e2225e68d5431b0170360f40b0a7e5",
+        "vram-640.bin": "c319e5aa7004b45cfb9db4dfc34fd2b1457d1ad4aa465587b430e438f27ee5c0",
+        "vram-704.bin": "934c45cd2137e31a0b0962d5287a71423fd7f0160a1cfeb90a3ee85e5b60f2bc",
+        "vram-768.bin": "00b288b175611cdb763542f22aa2e9ef5665e7ab7d6659ae680cdebf71f3a473",
+        "vram-832.bin": "835a6821fafa8a1690a2643dc298d3d316a7e580d69753847f84e3dfd995ca17",
+        "vram-896.bin": "2eba54b522c03bfaac7f49691b64e07f9c33cf747e1b04d6f433f1916c81184a",
+        "vram-960.bin": "4f3b97267ebc68299365f742ec2dbaec50b7776effbbba1344e4761cafdf5a56"
+      }
+    },
+    {
+      "name": "CATSTRIDER",
+      "version": "before",
+      "cpu": "R800",
+      "rom_sha256": "c6a1c58e4264703aa71f2d5554b44e841464773f757ef3e62dd57d3b196fd8f7",
+      "updates_per_emulated_second": 29.96137055852704,
+      "frames_checked": 1536,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        0
+      ],
+      "samples": {
+        "vram-1024.bin": "86e630655c2247461e4acd6c7aaebf56cc7fe4030ce590f0d711af3e32df85b8",
+        "vram-1088.bin": "4944dc29af460487bb66ee8a3aee07123c549ec66735dd35f94bce10c82a8857",
+        "vram-1152.bin": "7c9f5937cf8455067d69e4a886174ec115ed597cea7d121e31235a4a5b5df662",
+        "vram-1216.bin": "a2086499cfab5389ebf4db5e6d0e4bd975751718a2686582c3d3180db63b1032",
+        "vram-128.bin": "d485e83fec17136816946ef29c1a7ee97a8b4b2cc4b4ae8e641a0d9187e27575",
+        "vram-1280.bin": "75c05e0eeeef7928dedad8ccc04ec6230483957c5f8eed1457ae680853c935d4",
+        "vram-1344.bin": "a7a578130d03db6ce86f9eccd1f1fd269f9ef1d455c2df6279031e0abb85cfd2",
+        "vram-1408.bin": "83edca7e159b2859c7fd49a0383bc7df8f7ff1038b0e83d98949db1293085af0",
+        "vram-1472.bin": "b5e7772fffd0ad84cd6cf7016e2dcbe6ad0733675fbb4bab7c1b67d82708a1fe",
+        "vram-192.bin": "05f67ed27679aff26d00a4fcb617fa3a4bb568f880121946eb0f544a2d759b9a",
+        "vram-256.bin": "30970e381b95c69834115904574fb004790bf5d6b6da086ef66f1790dcb9e3ba",
+        "vram-320.bin": "edd81eafaecae05c9c2a954018ac7e17c4fc5972307e7a8e7dd7197beb9a07a7",
+        "vram-384.bin": "78d5bbb391cb55e596a7800800a61b73e7289f086e84722a72445aee55776732",
+        "vram-448.bin": "38dc5b2774c745a589375f62e52ac125829335b94ac35dbb9ecf6de9032295a2",
+        "vram-512.bin": "f55280178c941685ac50036189ef25f23fc98e4670ffe469d62a0e490fdda871",
+        "vram-576.bin": "b7346e04d7308c7219cd077b67993c706f74ed2d5386faa6403cf132d40f4975",
+        "vram-64.bin": "a9ea459c6c3f799e5fb3aaad8a7af5c057e2225e68d5431b0170360f40b0a7e5",
+        "vram-640.bin": "c319e5aa7004b45cfb9db4dfc34fd2b1457d1ad4aa465587b430e438f27ee5c0",
+        "vram-704.bin": "934c45cd2137e31a0b0962d5287a71423fd7f0160a1cfeb90a3ee85e5b60f2bc",
+        "vram-768.bin": "00b288b175611cdb763542f22aa2e9ef5665e7ab7d6659ae680cdebf71f3a473",
+        "vram-832.bin": "835a6821fafa8a1690a2643dc298d3d316a7e580d69753847f84e3dfd995ca17",
+        "vram-896.bin": "2eba54b522c03bfaac7f49691b64e07f9c33cf747e1b04d6f433f1916c81184a",
+        "vram-960.bin": "4f3b97267ebc68299365f742ec2dbaec50b7776effbbba1344e4761cafdf5a56"
+      }
+    },
+    {
+      "name": "CATSTRIDER",
+      "version": "after",
+      "cpu": "Z80",
+      "rom_sha256": "7ec61d0044174cff87e48641e9f115066877c267e7acd0640c19da76bf98f804",
+      "updates_per_emulated_second": 29.961372028907345,
+      "frames_checked": 1536,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        96
+      ],
+      "samples": {
+        "vram-1024.bin": "86e630655c2247461e4acd6c7aaebf56cc7fe4030ce590f0d711af3e32df85b8",
+        "vram-1088.bin": "4944dc29af460487bb66ee8a3aee07123c549ec66735dd35f94bce10c82a8857",
+        "vram-1152.bin": "7c9f5937cf8455067d69e4a886174ec115ed597cea7d121e31235a4a5b5df662",
+        "vram-1216.bin": "a2086499cfab5389ebf4db5e6d0e4bd975751718a2686582c3d3180db63b1032",
+        "vram-128.bin": "d485e83fec17136816946ef29c1a7ee97a8b4b2cc4b4ae8e641a0d9187e27575",
+        "vram-1280.bin": "75c05e0eeeef7928dedad8ccc04ec6230483957c5f8eed1457ae680853c935d4",
+        "vram-1344.bin": "a7a578130d03db6ce86f9eccd1f1fd269f9ef1d455c2df6279031e0abb85cfd2",
+        "vram-1408.bin": "83edca7e159b2859c7fd49a0383bc7df8f7ff1038b0e83d98949db1293085af0",
+        "vram-1472.bin": "b5e7772fffd0ad84cd6cf7016e2dcbe6ad0733675fbb4bab7c1b67d82708a1fe",
+        "vram-192.bin": "05f67ed27679aff26d00a4fcb617fa3a4bb568f880121946eb0f544a2d759b9a",
+        "vram-256.bin": "30970e381b95c69834115904574fb004790bf5d6b6da086ef66f1790dcb9e3ba",
+        "vram-320.bin": "edd81eafaecae05c9c2a954018ac7e17c4fc5972307e7a8e7dd7197beb9a07a7",
+        "vram-384.bin": "78d5bbb391cb55e596a7800800a61b73e7289f086e84722a72445aee55776732",
+        "vram-448.bin": "38dc5b2774c745a589375f62e52ac125829335b94ac35dbb9ecf6de9032295a2",
+        "vram-512.bin": "f55280178c941685ac50036189ef25f23fc98e4670ffe469d62a0e490fdda871",
+        "vram-576.bin": "b7346e04d7308c7219cd077b67993c706f74ed2d5386faa6403cf132d40f4975",
+        "vram-64.bin": "a9ea459c6c3f799e5fb3aaad8a7af5c057e2225e68d5431b0170360f40b0a7e5",
+        "vram-640.bin": "c319e5aa7004b45cfb9db4dfc34fd2b1457d1ad4aa465587b430e438f27ee5c0",
+        "vram-704.bin": "934c45cd2137e31a0b0962d5287a71423fd7f0160a1cfeb90a3ee85e5b60f2bc",
+        "vram-768.bin": "00b288b175611cdb763542f22aa2e9ef5665e7ab7d6659ae680cdebf71f3a473",
+        "vram-832.bin": "835a6821fafa8a1690a2643dc298d3d316a7e580d69753847f84e3dfd995ca17",
+        "vram-896.bin": "2eba54b522c03bfaac7f49691b64e07f9c33cf747e1b04d6f433f1916c81184a",
+        "vram-960.bin": "4f3b97267ebc68299365f742ec2dbaec50b7776effbbba1344e4761cafdf5a56"
+      }
+    },
+    {
+      "name": "CATSTRIDER",
+      "version": "after",
+      "cpu": "R800",
+      "rom_sha256": "2c2c8e2b0aa9fe46bab5eaefb104f7b46c545c4d81333f3675e884a43d9561c7",
+      "updates_per_emulated_second": 29.961369414898016,
+      "frames_checked": 1536,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        0
+      ],
+      "samples": {
+        "vram-1024.bin": "86e630655c2247461e4acd6c7aaebf56cc7fe4030ce590f0d711af3e32df85b8",
+        "vram-1088.bin": "4944dc29af460487bb66ee8a3aee07123c549ec66735dd35f94bce10c82a8857",
+        "vram-1152.bin": "7c9f5937cf8455067d69e4a886174ec115ed597cea7d121e31235a4a5b5df662",
+        "vram-1216.bin": "a2086499cfab5389ebf4db5e6d0e4bd975751718a2686582c3d3180db63b1032",
+        "vram-128.bin": "d485e83fec17136816946ef29c1a7ee97a8b4b2cc4b4ae8e641a0d9187e27575",
+        "vram-1280.bin": "75c05e0eeeef7928dedad8ccc04ec6230483957c5f8eed1457ae680853c935d4",
+        "vram-1344.bin": "a7a578130d03db6ce86f9eccd1f1fd269f9ef1d455c2df6279031e0abb85cfd2",
+        "vram-1408.bin": "83edca7e159b2859c7fd49a0383bc7df8f7ff1038b0e83d98949db1293085af0",
+        "vram-1472.bin": "b5e7772fffd0ad84cd6cf7016e2dcbe6ad0733675fbb4bab7c1b67d82708a1fe",
+        "vram-192.bin": "05f67ed27679aff26d00a4fcb617fa3a4bb568f880121946eb0f544a2d759b9a",
+        "vram-256.bin": "30970e381b95c69834115904574fb004790bf5d6b6da086ef66f1790dcb9e3ba",
+        "vram-320.bin": "edd81eafaecae05c9c2a954018ac7e17c4fc5972307e7a8e7dd7197beb9a07a7",
+        "vram-384.bin": "78d5bbb391cb55e596a7800800a61b73e7289f086e84722a72445aee55776732",
+        "vram-448.bin": "38dc5b2774c745a589375f62e52ac125829335b94ac35dbb9ecf6de9032295a2",
+        "vram-512.bin": "f55280178c941685ac50036189ef25f23fc98e4670ffe469d62a0e490fdda871",
+        "vram-576.bin": "b7346e04d7308c7219cd077b67993c706f74ed2d5386faa6403cf132d40f4975",
+        "vram-64.bin": "a9ea459c6c3f799e5fb3aaad8a7af5c057e2225e68d5431b0170360f40b0a7e5",
+        "vram-640.bin": "c319e5aa7004b45cfb9db4dfc34fd2b1457d1ad4aa465587b430e438f27ee5c0",
+        "vram-704.bin": "934c45cd2137e31a0b0962d5287a71423fd7f0160a1cfeb90a3ee85e5b60f2bc",
+        "vram-768.bin": "00b288b175611cdb763542f22aa2e9ef5665e7ab7d6659ae680cdebf71f3a473",
+        "vram-832.bin": "835a6821fafa8a1690a2643dc298d3d316a7e580d69753847f84e3dfd995ca17",
+        "vram-896.bin": "2eba54b522c03bfaac7f49691b64e07f9c33cf747e1b04d6f433f1916c81184a",
+        "vram-960.bin": "4f3b97267ebc68299365f742ec2dbaec50b7776effbbba1344e4761cafdf5a56"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "version": "before",
+      "cpu": "Z80",
+      "rom_sha256": "1fb5d7a49e347caade2f15ca25540e4ad7a56aeeb2b7d08cd71085aa7735e04b",
+      "updates_per_emulated_second": 19.97424745203788,
+      "frames_checked": 320,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        96
+      ],
+      "samples": {
+        "vram-128.bin": "6b223402a3c65430c25138e43d1dfe05c059cecfad11e2a6a72a9d9ddc49e3a2",
+        "vram-192.bin": "3ef202825f374f2c43e2b72b8f834eaaa4b9247223aea18f4ff84bf6c15545c3",
+        "vram-256.bin": "073a9de5537e35bf4bc31f619e215ba0e50dd501c652ab4ccbe6fab9b24df80e",
+        "vram-64.bin": "18f3b94f84928efa7b25d34ee751bcbc6acb5c93d07e87a5ad06d17e7f249485"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "version": "before",
+      "cpu": "R800",
+      "rom_sha256": "aad43415e0e8f6fe28a0d5977b7dd631f410ea489384c1a444fabf11b29772d0",
+      "updates_per_emulated_second": 28.57301711431045,
+      "frames_checked": 320,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        0
+      ],
+      "samples": {
+        "vram-128.bin": "6b223402a3c65430c25138e43d1dfe05c059cecfad11e2a6a72a9d9ddc49e3a2",
+        "vram-192.bin": "3ef202825f374f2c43e2b72b8f834eaaa4b9247223aea18f4ff84bf6c15545c3",
+        "vram-256.bin": "073a9de5537e35bf4bc31f619e215ba0e50dd501c652ab4ccbe6fab9b24df80e",
+        "vram-64.bin": "18f3b94f84928efa7b25d34ee751bcbc6acb5c93d07e87a5ad06d17e7f249485"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "version": "after",
+      "cpu": "Z80",
+      "rom_sha256": "6e5640279e17ce5776aa7647c8ea2d21f21140c8b63108b4091d0c735695f1a6",
+      "updates_per_emulated_second": 29.961368557560416,
+      "frames_checked": 320,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        96
+      ],
+      "samples": {
+        "vram-128.bin": "6b223402a3c65430c25138e43d1dfe05c059cecfad11e2a6a72a9d9ddc49e3a2",
+        "vram-192.bin": "3ef202825f374f2c43e2b72b8f834eaaa4b9247223aea18f4ff84bf6c15545c3",
+        "vram-256.bin": "073a9de5537e35bf4bc31f619e215ba0e50dd501c652ab4ccbe6fab9b24df80e",
+        "vram-64.bin": "18f3b94f84928efa7b25d34ee751bcbc6acb5c93d07e87a5ad06d17e7f249485"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "version": "after",
+      "cpu": "R800",
+      "rom_sha256": "26b4e3682098e30e329f9d3347fd835946c790de20defbdf226fd3e597069182",
+      "updates_per_emulated_second": 28.573009607025885,
+      "frames_checked": 320,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "cpu_register6": [
+        0
+      ],
+      "samples": {
+        "vram-128.bin": "6b223402a3c65430c25138e43d1dfe05c059cecfad11e2a6a72a9d9ddc49e3a2",
+        "vram-192.bin": "3ef202825f374f2c43e2b72b8f834eaaa4b9247223aea18f4ff84bf6c15545c3",
+        "vram-256.bin": "073a9de5537e35bf4bc31f619e215ba0e50dd501c652ab4ccbe6fab9b24df80e",
+        "vram-64.bin": "18f3b94f84928efa7b25d34ee751bcbc6acb5c93d07e87a5ad06d17e7f249485"
+      }
+    }
+  ]
+}

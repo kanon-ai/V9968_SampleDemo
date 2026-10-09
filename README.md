@@ -1,5 +1,16 @@
 # V9968 Sample Demos — v2.0.0
 
+## VRAM READ LAB v0.2 — experimental diagnostic / 2026-10-09
+
+V9968のCPUによるVRAM読み出しを調べる診断ソフトを追加しました。Z80／R800比較、読み間隔の変更、最初の異常アドレス・期待値・実測値・ビット別件数、Memtest風の領域マップを表示します。各32KiB通常ROM、外付け88h版と内蔵98h版を用意しています。
+
+**本診断ソフトはopenMSXで検証済み、BlueMSX Plus・実機は未確認です。試作・無保証です。下記の既存デモの検証状況を本診断ソフトに適用しないでください。**
+
+[診断ROM・ソース・説明書](diagnostics/vram-read-lab/README.md) · [ダウンロード](https://github.com/kanon-ai/V9968_SampleDemo/releases/tag/vram-read-lab-v0.2) · [利用条件](diagnostics/vram-read-lab/LICENSE.md) · [免責](diagnostics/vram-read-lab/DISCLAIMER.md)
+
+Experimental CPU VRAM read diagnostic. Verified in the documented openMSX configurations only; **BlueMSX Plus and physical hardware are not yet verified**. Separate from the existing graphics demos. Includes 32KiB normal ROMs for external 88h and internal 98h I/O profiles, source and diagnostic documentation.
+
+
 ## Z80最適化版 / Z80 optimization — 2026-10-05
 
 **CATSTRIDERとCAPE CIRCUITのZ80最適化版を追加しました。** 検証したZ80モードでは両方とも約20→30更新/秒。原画・描画内容を維持し、R800でも確認しました。V9968は引き続き必要です。

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "V9968-VRAM-DIAG-EXTERNAL-88.rom",
+    "bytes": 32768,
+    "sha256": "68c8f2e018e8701687ffc68cd66501aa52162a25f253b959d0498f1e85b10397",
+    "port": 136
+  },
+  {
+    "file": "V9968-VRAM-DIAG-INTERNAL-98.rom",
+    "bytes": 32768,
+    "sha256": "8b01a1f0d514afebc7da4db87cd3127f4bb531d464d694a049167bb99e5bef80",
+    "port": 152
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "key": "3",
+  "matrix_row": 0,
+  "matrix_mask": 8,
+  "result_cpu": 2,
+  "restart_after_release": true
+}

@@ -1,0 +1,8 @@
+{
+  "counter_saturation": true,
+  "auto_stops_after_error_pass": true,
+  "passes": 1,
+  "errors": 65535,
+  "bit0": 65535,
+  "bit7": 3
+}

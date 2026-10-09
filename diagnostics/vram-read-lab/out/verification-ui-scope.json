@@ -1,0 +1,14 @@
+{
+  "measurement_and_keyboard_unchanged": {
+    "main-to-init_screen": "identical source",
+    "keys-to-draw": "identical source"
+  },
+  "changes": [
+    "font upload 1024 to 2048 bytes",
+    "SCREEN 0 dashboard layout",
+    "fixed white-on-navy palette",
+    "16KiB bank map and error indicators"
+  ],
+  "screen_mode_unchanged": true,
+  "read_load_unchanged": true
+}

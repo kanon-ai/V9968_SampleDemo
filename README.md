@@ -1,5 +1,15 @@
 # V9968 Sample Demos — v2.0.0
 
+## 全公開デモの外付け88h版・内蔵98h版 / 2026-10-19
+
+**公開済み6デモすべての外付け88h版・内蔵98h版を用意しました。** CATSTRIDERとCAPE CIRCUITはZ80最適化版を収録し、Z80固定版もあります。全16本、ASCII8。
+
+[ROM選択・同期方式・検証範囲](io-variants/README.md) · [まとめてダウンロード](https://github.com/kanon-ai/V9968_SampleDemo/releases/tag/io-variants-20261019)
+
+外付け版は現行V9968のopenMSX構成で検証済み。今回の外付け版はBlueMSX Plus・実機では未確認です。内蔵版は既存公開ROMと完全一致します。以下の過去版の検証記載とは区別してください。
+
+All six published demos now include external 88h and internal 98h ROMs. External editions were verified in current-specification openMSX; BlueMSX Plus and physical hardware are not yet verified for these editions. See the linked guide to choose the correct ROM.
+
 ## VRAM READ LAB v0.2 — experimental diagnostic / 2026-10-09
 
 V9968のCPUによるVRAM読み出しを調べる診断ソフトを追加しました。Z80／R800比較、読み間隔の変更、最初の異常アドレス・期待値・実測値・ビット別件数、Memtest風の領域マップを表示します。各32KiB通常ROM、外付け88h版と内蔵98h版を用意しています。

@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-19",
+  "emulator_sha256": "0528593dc9c71f40dcca00193c1b3ea8d745b833c3c7c0fd38cebc651ef1a62d",
+  "hardware_tested": false,
+  "external_bluemsx_tested": false,
+  "results": [
+    {
+      "name": "PRISM_FLIGHT",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "106ca784639765e2555de4e1d927ff3077b7bf213b95b27875d1bd558f1251dc",
+      "frames_checked": 514,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.92274929350747,
+      "vram_samples": {
+        "vram-256.bin": "3e6c0045d88f428cadb6b3b541042655071f75656431dc7b338e31ba8810bf06",
+        "vram-64.bin": "910984ecd8bf52f94fa15b5b5b0cec6227090003c23961be4a9879b2e5806c36"
+      }
+    },
+    {
+      "name": "PRISM_FLIGHT",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "2a10040ce95d63bad47e5bddabd617bd4ea8b4cd043d6d5855d94f36b21d94f5",
+      "frames_checked": 514,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.9227571457695,
+      "vram_samples": {
+        "vram-256.bin": "3e6c0045d88f428cadb6b3b541042655071f75656431dc7b338e31ba8810bf06",
+        "vram-64.bin": "910984ecd8bf52f94fa15b5b5b0cec6227090003c23961be4a9879b2e5806c36"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "SUPER_CAT-COASTAL_FLIGHT",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "c0ad7363537b156a25f15c08b0fac64fec9353eada419f5306844a03f3406348",
+      "frames_checked": 2050,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.92273556356182,
+      "vram_samples": {
+        "vram-256.bin": "b9d816b2120edd7e88b2c2d665ee36ab29a50a5345f466a26f7f746ae311d4aa",
+        "vram-64.bin": "6888ce8ad9911e64e181c5194bccf3221b920ec1ee041c4ac4e2de8ee7b34f80"
+      }
+    },
+    {
+      "name": "SUPER_CAT-COASTAL_FLIGHT",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "a47893629ce3c52ddfcf6cb13d0a38494b921b5e91036ab5d4515970c2c0e474",
+      "frames_checked": 2050,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.922743894359286,
+      "vram_samples": {
+        "vram-256.bin": "b9d816b2120edd7e88b2c2d665ee36ab29a50a5345f466a26f7f746ae311d4aa",
+        "vram-64.bin": "6888ce8ad9911e64e181c5194bccf3221b920ec1ee041c4ac4e2de8ee7b34f80"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "LUMEN_FORGE",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "7ecf334ce5beb185f049dacf6cb3b3f96f5146eff0dd1c75797243c3ce786015",
+      "frames_checked": 1026,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.92275664205029,
+      "vram_samples": {
+        "vram-256.bin": "16e8f0056d30e02ea7dccce5921d07595fdea9bf59db1b8ff745d8faf71f2654",
+        "vram-64.bin": "7ee08fdb00da510f0e9b53730ee02bc7a1a32ef231f0dc94214f375f1487505a"
+      }
+    },
+    {
+      "name": "LUMEN_FORGE",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "627b3d11a6627e3c5f52e16afa10881c53e26db250f0148afd02278db128d71d",
+      "frames_checked": 1026,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.9227286957214,
+      "vram_samples": {
+        "vram-256.bin": "16e8f0056d30e02ea7dccce5921d07595fdea9bf59db1b8ff745d8faf71f2654",
+        "vram-64.bin": "7ee08fdb00da510f0e9b53730ee02bc7a1a32ef231f0dc94214f375f1487505a"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "MIST_VALE",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "4a9d8cf4261784798d910c456a844cd9a95a068a3c36bf201a33c8392726fd0a",
+      "frames_checked": 1026,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 11275,
+        "vblank_counts": 1025,
+        "raster_counts": 11275
+      },
+      "updates_per_emulated_second": 59.92269143399013,
+      "vram_samples": {
+        "vram-256.bin": "f0fb240149f17f17f69c9718d29447ceb279a0f682a250b09ad82910ed394c1d",
+        "vram-64.bin": "2366cc58b70f502cb80401b5e25dcdb119ed3002acb32911f39346d504c1b15c"
+      }
+    },
+    {
+      "name": "MIST_VALE",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "3740684d47d567bf7179e3c587a0aeea6ec16e45e7fc9165d158d51dfec8376f",
+      "frames_checked": 1026,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 11275,
+        "vblank_counts": 1025,
+        "raster_counts": 11275
+      },
+      "updates_per_emulated_second": 59.92273605001596,
+      "vram_samples": {
+        "vram-256.bin": "f0fb240149f17f17f69c9718d29447ceb279a0f682a250b09ad82910ed394c1d",
+        "vram-64.bin": "2366cc58b70f502cb80401b5e25dcdb119ed3002acb32911f39346d504c1b15c"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "CATSTRIDER",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "2c2c8e2b0aa9fe46bab5eaefb104f7b46c545c4d81333f3675e884a43d9561c7",
+      "frames_checked": 1538,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 3074,
+        "vblank_counts": 3074
+      },
+      "updates_per_emulated_second": 29.961377093551715,
+      "vram_samples": {
+        "vram-256.bin": "bc53decfe040e1cd0b71e05592e57f75869ede51552013898fbd04e0160c669d",
+        "vram-64.bin": "c10868290644c45df407e49f2df64a6012ceb2f5fc01c77f05098e6b38a38eda"
+      }
+    },
+    {
+      "name": "CATSTRIDER",
+      "profile": "INTERNAL-98",
+      "cpu": "Z80",
+      "rom_sha256": "7ec61d0044174cff87e48641e9f115066877c267e7acd0640c19da76bf98f804",
+      "frames_checked": 1538,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 3075,
+        "vblank_counts": 3075
+      },
+      "updates_per_emulated_second": 29.961372028907345,
+      "vram_samples": {
+        "vram-256.bin": "bc53decfe040e1cd0b71e05592e57f75869ede51552013898fbd04e0160c669d",
+        "vram-64.bin": "c10868290644c45df407e49f2df64a6012ceb2f5fc01c77f05098e6b38a38eda"
+      }
+    },
+    {
+      "name": "CATSTRIDER",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "26bde13d42e1d5c5166643b045bf1b1408d62cabddd1bb15a6ccb2089044d7c6",
+      "frames_checked": 1538,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 3074,
+        "vblank_counts": 3074
+      },
+      "updates_per_emulated_second": 29.961371048653792,
+      "vram_samples": {
+        "vram-256.bin": "bc53decfe040e1cd0b71e05592e57f75869ede51552013898fbd04e0160c669d",
+        "vram-64.bin": "c10868290644c45df407e49f2df64a6012ceb2f5fc01c77f05098e6b38a38eda"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "CATSTRIDER",
+      "profile": "EXTERNAL-88",
+      "cpu": "Z80",
+      "rom_sha256": "60b65e1565a23feaaad587a24edd9af828c8a2d8fdbdaef99ea775f3fde76bd0",
+      "frames_checked": 1538,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {
+        "irq_counts": 3075,
+        "vblank_counts": 3075
+      },
+      "updates_per_emulated_second": 29.96136647413807,
+      "vram_samples": {
+        "vram-256.bin": "bc53decfe040e1cd0b71e05592e57f75869ede51552013898fbd04e0160c669d",
+        "vram-64.bin": "c10868290644c45df407e49f2df64a6012ceb2f5fc01c77f05098e6b38a38eda"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "profile": "INTERNAL-98",
+      "cpu": "auto",
+      "rom_sha256": "26b4e3682098e30e329f9d3347fd835946c790de20defbdf226fd3e597069182",
+      "frames_checked": 322,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 28.573009607025885,
+      "vram_samples": {
+        "vram-256.bin": "10b62a684ab4ee8bd3823b895145508ed60dcdbffd6d884533ec9026fa41519b",
+        "vram-64.bin": "4310a761c44c295157ba72ad62766cdc9d822fd2d92495d922f8b6da8c97cf4b"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "profile": "INTERNAL-98",
+      "cpu": "Z80",
+      "rom_sha256": "6e5640279e17ce5776aa7647c8ea2d21f21140c8b63108b4091d0c735695f1a6",
+      "frames_checked": 322,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 29.961368557560416,
+      "vram_samples": {
+        "vram-256.bin": "10b62a684ab4ee8bd3823b895145508ed60dcdbffd6d884533ec9026fa41519b",
+        "vram-64.bin": "4310a761c44c295157ba72ad62766cdc9d822fd2d92495d922f8b6da8c97cf4b"
+      }
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "profile": "EXTERNAL-88",
+      "cpu": "auto",
+      "rom_sha256": "9edb6425419a5114bf97dadac2b6d827841f24f9fef22ca9fad1fe3c089eb93b",
+      "frames_checked": 322,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 59.92269937999973,
+      "vram_samples": {
+        "vram-256.bin": "10b62a684ab4ee8bd3823b895145508ed60dcdbffd6d884533ec9026fa41519b",
+        "vram-64.bin": "4310a761c44c295157ba72ad62766cdc9d822fd2d92495d922f8b6da8c97cf4b"
+      },
+      "vram_matches_internal": true
+    },
+    {
+      "name": "CAPE_CIRCUIT",
+      "profile": "EXTERNAL-88",
+      "cpu": "Z80",
+      "rom_sha256": "caf13b6c6a3d93a9e26aee43ac9a4f9c5427ac7bdf9b2d36a97fef69c23d2715",
+      "frames_checked": 322,
+      "sequential": true,
+      "loop": true,
+      "flips_in_blank_and_command_idle": true,
+      "irq_counters": {},
+      "updates_per_emulated_second": 29.961368557560416,
+      "vram_samples": {
+        "vram-256.bin": "10b62a684ab4ee8bd3823b895145508ed60dcdbffd6d884533ec9026fa41519b",
+        "vram-64.bin": "4310a761c44c295157ba72ad62766cdc9d822fd2d92495d922f8b6da8c97cf4b"
+      },
+      "vram_matches_internal": true
+    }
+  ]
+}

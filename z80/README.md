@@ -1,5 +1,7 @@
 # Z80 optimization update — 2026-10-05
 
+外付け88h版・内蔵98h版の両方は[全公開デモのROM一覧](../io-variants/README.md)から選べます。外付け版の検証範囲もリンク先を参照してください。
+
 **CATSTRIDERとCAPE CIRCUITを、画面の内容を維持してZ80向けに最適化しました。**
 V9968は引き続き必要です。通常のMSX2内蔵VDP向け移植ではありません。
 各ROMは512 KiB / ASCII8、現行仕様V9968・256 KiB VRAM・98h–9Chポート用です。
